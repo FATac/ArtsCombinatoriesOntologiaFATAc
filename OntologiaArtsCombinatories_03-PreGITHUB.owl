@@ -1,0 +1,3450 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#AT_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cartoonist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Case-Files"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cataloguer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Close"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collaborator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consultant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Courses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Curator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Designer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Devoloper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dinners"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalDinamycVisit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalServicesWorkshop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExhibitionTourings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film-maker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrameActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeAdmissionDays"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Illustrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstallationGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstitutionalAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interviews"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KindArtWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LecturesandSeminars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Media"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhotoInstallationOutsideFat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photographer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhptpInstallationCollectionSpaceA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhtoInstallation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresentationsorLaunchs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressKits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressReleases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project_Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectionPromotionFAT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtocolVisits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set-upProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Show"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialObjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecificActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sponsor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trasnlator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TvRadioCinema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workshop_tutor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkshopdandMeetings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#foaf:Organisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bornIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dcterms:isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foaf:knows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromsPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecificActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTranslation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasparticipedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdministrativeOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isArchiveServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssetManagment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAuthors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBookshopServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCase-Fileproducer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCataloguingOriginalWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCataloguingoftheGraphicWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCertificationofOriginalWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCertificationoftheGraphicWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCirculationSheet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComunicationostheEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConditionReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConservationandRestoration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCopyrightProtection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDescriptionandCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDescriptionofConditionEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEducationalServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExternalRelations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFilmedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFinancialResorceManagment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFriendsoftheFAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFundacioLogo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHistoryofFAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHumanResorces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIncorporatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInstallationGuide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterventionReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLanguageof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLegalProceeding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLegislationandLegalMatters"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLibraryServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLoanofWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagmentofFAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOrganisationoftheEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPossessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPressandMediaClipping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPresskitsandPressReleases"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProductioniftheEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPromotionandInformationoboutFAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProtocolEventsActions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublicationManagment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublicationoftheEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublishing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecordoftheWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRefrencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRegistrationoftheWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResearchAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpaceandSet-Up"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStatusandRules"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTouringEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWorkerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWorks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#movedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#movedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#references"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#represents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specificActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#superActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tookPlaceAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tookPlaceOnorWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasDestinationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasOriginOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#witnessed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AdmissionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AdmissionSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AspectRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AudioChannels"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AudioCodec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BitRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CV"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CameraModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Case-fileDescriptionLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ColorIllustrations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ColorMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ColorSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Conservation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CoverPublications"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CreditLine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CurrentlySituation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DeathDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DurationTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EndDateLend"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EstimatedValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ExpurgateDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Extension"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FatacId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Fax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FileSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FooterImage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FrameRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FullVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Holding"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ISBN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#KindofArtWork"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#License"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Modified"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Mute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NameMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberofCopies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumberofPages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Orientation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OriginalSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RegisterNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Restorations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SamplingRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SizeArtWork"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SizePublication"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StartDateLend"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Subtitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Symbolmaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TechniqueArtWork"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ToExpurgate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Vegap"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VideoCodec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Volum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WidthImage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dc:Uri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:Title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#definitionMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:Homepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:givenName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foaf:mbox"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPhysicallVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isATExhibition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSelf-produced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Consultor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jaumet"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AT_Work"/>
+        <Class IRI="#Art_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+        <Class IRI="#AT_Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administration"/>
+        <Class IRI="#Case-Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architect"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art_Work"/>
+        <Class IRI="#SpecialObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cartoonist"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cataloguer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Close"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaborator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consultant"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Courses"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critic"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalManagement"/>
+        <Class IRI="#Case-Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Curator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dancer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Designer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Devoloper"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinners"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Editor"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalDinamycVisit"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalServicesWorkshop"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExhibitionTourings"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film-maker"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrameActivity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeAdmissionDays"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Illustrator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstallationGuide"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InstitutionalAgreement"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interviews"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecturer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LecturesandSeminars"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Member"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opening"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherActivities"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participant"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhotoInstallationOutsideFat"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photographer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhptpInstallationCollectionSpaceA"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhtoInstallation"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poet"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresentationsorLaunchs"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressKits"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressReleases"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project_Manager"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectionPromotionAT"/>
+        <Class IRI="#Case-Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectionPromotionFAT"/>
+        <Class IRI="#Case-Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtocolVisits"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publication"/>
+        <Class IRI="#SpecialObjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set-upProject"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Show"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speaker"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecificActivity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sponsor"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperActivity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Text"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trasnlator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TvRadioCinema"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Workshop_tutor"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkshopdandMeetings"/>
+        <Class IRI="#Colletion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#foaf:Organisation"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#foaf:Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#foaf:Organisation"/>
+        <Class IRI="#foaf:Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#Consultor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#foaf:Organisation"/>
+        <NamedIndividual IRI="#FAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#foaf:Person"/>
+        <NamedIndividual IRI="#jaumet"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <NamedIndividual IRI="#jaumet"/>
+        <NamedIndividual IRI="#FAT"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRepresentation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSuperActivity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConditionReport"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExternalRelations"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLanguageof"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPressandMediaClipping"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#possesses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tookPlaceOnorWithin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#consistOf"/>
+        <ObjectProperty IRI="#isIncorporatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#fromsPartOf"/>
+        <ObjectProperty IRI="#isComposedOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#specificActivityOf"/>
+        <ObjectProperty IRI="#hasSpecificActivity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#superActivityOf"/>
+        <ObjectProperty IRI="#hasSuperActivity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="#isRefrencedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#wasOriginOf"/>
+        <ObjectProperty IRI="#movedFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#wasDestinationOf"/>
+        <ObjectProperty IRI="#movedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#tookPlaceAt"/>
+        <ObjectProperty IRI="#witnessed"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bornIn"/>
+        <Class IRI="#foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <Class IRI="#Case-Files"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistOf"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdIn"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdIn"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:isVersionOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:isVersionOf"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diedIn"/>
+        <Class IRI="#foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#foaf:knows"/>
+        <Class IRI="#foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Rights"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Case-Files"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRepresentation"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRepresentation"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRepresentation"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecificActivity"/>
+        <Class IRI="#FrameActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecificActivity"/>
+        <Class IRI="#SpecificActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperActivity"/>
+        <Class IRI="#FrameActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Audio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Text"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Video"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasparticipedIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAdministrativeOrganisation"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isArchiveServices"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssetManagment"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAuthors"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBookshopServices"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCase-Fileproducer"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCase-Fileproducer"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCataloguingOriginalWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCataloguingoftheGraphicWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCertificationofOriginalWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCertificationoftheGraphicWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCirculationSheet"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComunicationostheEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConditionReport"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConservationandRestoration"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCopyrightProtection"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDescriptionandCondition"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDescriptionofConditionEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEducationalServices"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExternalRelations"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFilmedBy"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFilmedBy"/>
+        <Class IRI="#Video"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFinancialResorceManagment"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFriendsoftheFAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFundacioLogo"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHistoryofFAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHumanResorces"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIncorporatedIn"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInstallationGuide"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInterventionReport"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLanguageof"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLegalProceeding"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLegalProceeding"/>
+        <Class IRI="#Text"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLegislationandLegalMatters"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLibraryServices"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLoanofWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedAt"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagmentofFAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOrganisationoftheEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPossessedBy"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPressandMediaClipping"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPressandMediaClipping"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPresskitsandPressReleases"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProductioniftheEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPromotionandInformationoboutFAT"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPromotionandInformationoboutFAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProtocolEventsActions"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProtocolEventsActions"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublicationManagment"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublicationManagment"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublicationoftheEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublicationoftheEvent"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublishing"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRecordoftheWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRegistrationoftheWork"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isResearchAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSpaceandSet-Up"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStatusandRules"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStatusandRules"/>
+        <Class IRI="#Text"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTouringEvent"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <Class IRI="#foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWorks"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWorks"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#movedFrom"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#movedFrom"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#movedTo"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#movedTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsRole"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possesses"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#references"/>
+        <Class IRI="#Case-Files"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#represents"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceAt"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceOnorWithin"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tookPlaceOnorWithin"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bornIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carriedOutBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistOf"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:isVersionOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:isVersionOf"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diedIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#foaf:knows"/>
+        <Class IRI="#foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRepresentation"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpecificActivity"/>
+        <Class IRI="#SpecificActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Audio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Text"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTranslation"/>
+        <Class IRI="#Video"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasparticipedIn"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAdministrativeOrganisation"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isArchiveServices"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssetManagment"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAuthors"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBookshopServices"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCase-Fileproducer"/>
+        <Class IRI="#Case-Files"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCataloguingOriginalWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCataloguingoftheGraphicWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCertificationofOriginalWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCertificationoftheGraphicWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCirculationSheet"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComunicationostheEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConditionReport"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConditionReport"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConservationandRestoration"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCopyrightProtection"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDescriptionandCondition"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDescriptionofConditionEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEducationalServices"/>
+        <Class IRI="#Case-Files"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExternalRelations"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFilmedBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFinancialResorceManagment"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFriendsoftheFAT"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFundacioLogo"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHistoryofFAT"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHumanResorces"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIncorporatedIn"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInstallationGuide"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInterventionReport"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLanguageof"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLanguageof"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLegalProceeding"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLegislationandLegalMatters"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLibraryServices"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLoanofWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedAt"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagmentofFAT"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOrganisationoftheEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPossessedBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPressandMediaClipping"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPresskitsandPressReleases"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProductioniftheEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPromotionandInformationoboutFAT"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProtocolEventsActions"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublicationManagment"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublicationoftheEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublishing"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublishing"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRecordoftheWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRegistrationoftheWork"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isResearchAT"/>
+        <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSpaceandSet-Up"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStatusandRules"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTouringEvent"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWorks"/>
+        <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#movedFrom"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#movedTo"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possesses"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#references"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#references"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#represents"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#represents"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tookPlaceAT"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tookPlaceAt"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tookPlaceOnorWithin"/>
+        <Class IRI="#foaf:Organisation"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Address"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#BirthDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Extension"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#KindofArtWork"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Modified"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NumberCatalogue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Orientation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Subtitle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Year"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#foaf:familyName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#foaf:lastName"/>
+        <DataProperty IRI="#foaf:givenName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isATExhibition"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Abstract"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Abstract"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Abstract"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Abstract"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AdmissionDate"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AdmissionSource"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AspectRate"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AspectRate"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AudioChannels"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AudioChannels"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AudioCodec"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AudioCodec"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BirthDate"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BitRate"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BitRate"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CV"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CameraModel"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CameraModel"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Case-fileDescriptionLevel"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColorIllustrations"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColorIllustrations"/>
+        <Class IRI="#Text"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColorMode"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColorMode"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColorSystem"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Conservation"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CoverPublications"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CreditLine"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CreditLine"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CurrentlySituation"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CurrentlySituation"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CurrentlySituation"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeathDate"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DurationTime"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DurationTime"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDate"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDateLend"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDateLend"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDateLend"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EstimatedValue"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ExpurgateDate"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Extension"/>
+        <Class IRI="#Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Fax"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FileSize"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FooterImage"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FrameRate"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FullVersion"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Holding"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ISBN"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#KindofArtWork"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Manuscript"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Modified"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Modified"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Mute"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NameMaterial"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberCatalogue"/>
+        <Class IRI="#AT_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberT"/>
+        <Class IRI="#AT_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberofCopies"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberofPages"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumberofPages"/>
+        <Class IRI="#Text"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OperatingSystem"/>
+        <Class IRI="#Software"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Orientation"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OriginalSource"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Phone"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RegisterNumber"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Resolution"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Resolution"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Restorations"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingRate"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SamplingRate"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SizeArtWork"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SizePublication"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDate"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDateLend"/>
+        <Class IRI="#AT_Work_FAT_Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDateLend"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Subtitle"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Subtitle"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Subtitle"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Symbolmaterial"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TechniqueArtWork"/>
+        <Class IRI="#Art_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ToExpurgate"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Value"/>
+        <Class IRI="#Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Vegap"/>
+        <Class IRI="#AT_Work"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#VideoCodec"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Volum"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#WidthImage"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Year"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Year"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dc:Uri"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Title"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Title"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Title"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#definitionMaterial"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Class IRI="#Rights"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:familyName"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:firstName"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:gender"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:givenName"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:lastName"/>
+        <Class IRI="#foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:mbox"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPhysicallVersion"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isATExhibition"/>
+        <Class IRI="#CulturalManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSelf-produced"/>
+        <Class IRI="#CulturalManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Abstract"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AdmissionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AdmissionSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AspectRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AudioChannels"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AudioCodec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BirthDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BitRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CV"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CameraModel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Case-fileDescriptionLevel"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">compound</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">simple</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ColorIllustrations"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ColorMode"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">B/N</Literal>
+            <Literal datatypeIRI="&xsd;string">Color</Literal>
+            <Literal datatypeIRI="&xsd;string">to complete</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ColorSystem"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">RGB</Literal>
+            <Literal datatypeIRI="&xsd;string">To complete</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Conservation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CoverPublications"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CreditLine"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CurrentlySituation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DeathDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EndDateLend"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EstimatedValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ExpurgateDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Extension"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FatacId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Fax"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FileSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FooterImage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FrameRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FullVersion"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Holding"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ISBN"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Manuscript"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Modified"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Mute"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NameMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberCatalogue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberT"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberofCopies"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumberofPages"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OperatingSystem"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Orientation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OriginalSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RegisterNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Resolution"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Restorations"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SamplingRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SizeArtWork"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SizePublication"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StartDateLend"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Subtitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Symbolmaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TechniqueArtWork"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ToExpurgate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Vegap"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#VideoCodec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Volum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#WidthImage"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dc:Uri"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dcterms:Title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#definitionMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:Homepage"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:familyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:givenName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foaf:mbox"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPhysicallVersion"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isATExhibition"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSelf-produced"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AT_Work</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This subentity represents Antoni Tàpies&#39;s arts works.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AT_Work_FAT_Colletion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This subentity represents Antoni Tàpies&#39;s art works collected by the Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Abstract</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A summary or statement of the contents of a Case-Files, Event, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Administration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This section contains the documents related to administrative tasks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdmissionDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The date when an art work is being allowed to enter a place, organization, or institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents a person or organization that takes an active role or produces a specified effect.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Art_Work</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This subentity represents art works.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Audio</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes the audio files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Case-Files</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The administrative documents of the Fundació can be classified by case -files. The classificaton scheme of the Fundació makes possible to identify, classify and organise administrative documents from moment they are created. The sections of the classification scheme are:
+
+1. Administration
+2. Cultural managment
+3. Protection and Promotion of the artistic heritage of Antoni Tàpies
+4. Protection and Promotion of the documentary heritage of the Fundació
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Case-fileDescriptionLevel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aixòdiu si el case-file es:- 
+Una unitat documental simple 
+o 
+- una de composta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Colletion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity allows create colletions of Media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ColorIllustrations</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Colour or black and white colour illustrations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CoverPublications</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">paperback, hardcover, Clothbound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditLine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Caption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CulturalManagement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This section contains the documents related to cultural managment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Classe genèrica per desar dades que no es coneixen a priori. Per exemple, la informació legal dels documents d&#39;obres introduïts. Aquesta classe inclou un dataproperty &#39;&#39;Name&#39;&#39; que contindrà el nom o etiqueta de la dada i un dataproperty &#39;&#39;Value&#39;&#39; per indicar-ne el contingut o valor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Department</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A division of a large organization such as a government, university, business, or shop, dealing with a specific subject, commodity, or area of activity. This entity has to help to define who is the producer of the case-files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents an activity (exposition,  workshop, conference, etc.). It also represents the activity and  functioning of the institution  not linked to any specific activity  (advertising of the institution,  administrative documentation, protocol events and actions, external relations, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FatacId</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Número identificador únic de tots els objectes de l&#39;ontologia.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FrameActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents and activity framwork (for Example San Sebastián International Film Festival 2010).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Holding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes the image files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KindArtWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">List of different types of  artwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KindofArtWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atenció, pot ser és una relació amb l&#39;entitat type (subentitat kind of art work)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ISO 639:1988</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manuscript</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> written by hand, typed or printed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Material</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">List of different types of  materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Media</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes and ranks the different types of digital documents by format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProtectionPromotionAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This section contains the documents related to Protection and promotion of the Artistic Heritage of Antoni Tàpies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProtectionPromotionFAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This section contains the documents related to protection and promotion of the documentary heritage of the Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Publication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents a book, journal, a piece of music, etc. or other work for public sale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rights</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines the list of possible roles played by an Agent. 
+Events, Departments,... can have assigned roles
+Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Software</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes the software files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpecialObjects</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents two objects that, as the Events, have the capacity to generate documentation about themselves. As the Events, this objecte are represented by case-files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpecificActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents a specific activity framwork (for Example Donostia Awards 2010).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuperActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents a supra-activity (for Example San Sebastián International Film Festival).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Text</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes the text files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vegap</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">If VEGAP  has the digital image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Video</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This entity  describes the video files.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Volum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Description: quantity of items (paper, photo, videos, etc) related related to the file-case.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bornIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lloc geogràfic on ha nascut un persona.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#carriedOutBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relació que defineix quina persona ha realitzat un Event, un Art Work, una Publicació o un Media.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consistOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property identifies the instances of materials of Art Work is composed.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createdIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lloc geogràfic on s&#39;ha creta una obra d&#39;art, una publicació o un media. Location.
+
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dc:Uri</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is the Uri of a media-file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#diedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lloc geogràfic on ha mort una persona.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#foaf:Organisation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An organized body of people with a particular purpose (business, society, association, etc) </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#foaf:Person</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A human being regarded as an individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#foaf:givenName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the given name of some person
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#foaf:knows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">relates a person to another person that he or she knows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació defineix en quina llengua està un art work, d&#39;una publicació i d&#39;un media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRepresentation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació vincula una imatge que és representativa d&#39;un esdeveniment i d&#39;una obra d&#39;art i d&#39;una publicació.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSpecificActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">propiedad que representa las actividades específicas de una actividad marco, o una actividad específica que es subactividad de otra específica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTranslation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació defineix en quina llengua s&#39;ha traduït d&#39;un art work, una publicació i un media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isATExhibition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Related to the Events. If an exhibition is about AT or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAdministrativeOrganisation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió administrativa de l&#39;entitat (Polítiques i procediments, circulars, organigrames, llocs de treball, gestió dels recursos humans, del patrimoni, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isArchiveServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels serveis l&#39;Arxiu (Préstec, reprografia, consulta, difusió, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAssetManagment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del patrimoni de l&#39;entitat (operacions de béns mobles, inventari de béns mobles, utilització de béns mobles, utilització de béns inmobñes, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAuthors</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als autors que participen en una activitat (Event) (cartes, permisos, negociacions amb els autors que tan poden ser artistes, conferenciants, escriptors, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBookshopServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la llibreria (inventaris, productes, correspondència, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCase-Fileproducer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet definir quines persones o departament de la Fundació són les productores d&#39;un expedient de l&#39;Arxiu.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCataloguingOriginalWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra original d&#39;Antoni Tàpies (catàleg d&#39;obra original, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCataloguingoftheGraphicWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra gràfica d&#39;Antoni Tàpies (catàleg d&#39;obra gràfica, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCertificationofOriginalWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra original d&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCertificationoftheGraphicWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra gràfica de l&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCirculationSheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al full de préstec de les obres d&#39;art d&#39;un esdeveniment)  (fulls de prèstec, correspondència amb els prestadors, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property describes specific components that are individually documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isComunicationostheEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la comunicació d&#39;un esdeveniment (notes de premsa, gestió de la publicitat, elements de difusió, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConditionReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all informes de condicions de les obres d&#39;art d&#39;un esdeveniment (informes de condició, fotografia de les onbres, correspondència amb restauradors, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConservationandRestoration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;estat de conservació i restauració de l&#39;expedient d&#39;una obra de la col·lecció de la Fundació  (informes de restauració in de conservació, fotografies, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCopyrightProtection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la protecció de drets d&#39;autor de l&#39;obra de l&#39;Antoni Tàpies (permisos de reproducció de l&#39;obra, sol·licituds, gesions amb VEGAP, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDescriptionandCondition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres de la col·lecció de la Fundació i a la catalogació de les obres de l&#39;Antoni Tàpies  (informes de condició, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDescriptionofConditionEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres d&#39;un esdeveniment  (informes de condició, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isEducationalServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Servei educatiu (visites guiades, organització d&#39;activitats, tallers, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isExternalRelations</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFinancialResorceManagment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos financers de l&#39;entitat (pressupostos, gestió d&#39;ingressos i de despeses, anàlisis i conciliacions de comptes, impostos i obligacions fiscals, contractació administrativa, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFriendsoftheFAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels Amics de la Fundació (sol·licitud, correspondència, activitats específiques, relacions amb els Amic d&#39;altres institucions, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFundacioLogo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Logo de l&#39;entitat (imatges i aplicacions, imatge corporatiova).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHistoryofFAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la Història de la Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHumanResorces</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos humans de l&#39;entitat (Accés, selecció i provisió, expedientb de personal, relacions laborarls, formació i moviments de personal).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInstallationGuide</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInterventionReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la intervenció d&#39;una obra d&#39;art de la col·lecció de la Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLegalProceeding</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLegislationandLegalMatters</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als assumptes jurídics de l&#39;entitat (legislació pròpia de les fundacions, lesgislació general, acords i convenis, litigis, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLibraryServices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la Biblioteca (préstec intern, reprografia, consulta, difusió, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLoanofWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels préstecs de les obres de la Col·lecció de la Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lloc geogràfic d&#39;una organització.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagmentofFAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió a la direcció de l&#39;entitat (òrgans rectors, sessions de junta del patronat, memòria d&#39;activitats, membres del patronat, documents estratègics, avaluacions de direcció, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOrganisationoftheEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;organització d&#39;un esdeveniment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPossessedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet definir la possessió d&#39;una persona o organització d&#39;una obra d&#39;art.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPressandMediaClipping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als reculls de premsa i comunicació referents a la Fundació (no als esdeveniments que organitza).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPresskitsandPressReleases</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als dossiers i notes de premsa de la Fundació (no als esdeveniments que organitza).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProductioniftheEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la producció d&#39;un esdeveniment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPromotionandInformationoboutFAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa promoció i difusió de l&#39;entitat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProtocolEventsActions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als actes i atencions protocolàries (commemoracions, discursos, presentacions, escrits corporatius, visites i viatges, felicitacions, agraïments i condols, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPublicationManagment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions, tan de la Fundació com de l&#39;obra i figura d&#39;Antoni Tàpies (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPublicationoftheEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions relatives als esdevenimets que la Fundació organitza (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPublishing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet definir el rol que ha tingut una persona o organització (grups d&#39;artistes) en relació a un esdeveniment, una obra d&#39;art, una publicació o un media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRecordoftheWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la fitxa d&#39;una obra de la Col·lecció.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRegistrationoftheWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al registre d&#39;una obra de la Col·lecció.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isResearchAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a les investigacions que la Fundació porta a terme sobre l&#39;obra i la vida de l&#39;Antoni Tàpies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSelf-produced</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Related to the Events. If an exhibition is produced by FAT or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSpaceandSet-Up</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;espai i muntatge d&#39;un esdeveniment (plànols, cartel·les, disseny d&#39;espis, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isStatusandRules</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all estatuts i reglamets de l&#39;entitat i les seves respectives modificacions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTouringEvent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#movedFrom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A move will be linked to an origin, such as the move of an artefact from storage to dispalu. Ex. The movement to the Tut-Ankh-Amun exhibition moved from the Egiptian Museum in Cairo.
+
+(D&#39;aquí s&#39;hauria d&#39;inferir les localitzacions geogràfiques. De fet el moviment serà entre institucions però aquestes estan situades en geogràficament).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#movedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A move will be linked to a destination, such as the move of an artfact from storage to display. (D?aquí s&#39;hauria d&#39;inferir les localitzacions geogràfiques. De fet el moviment serà entre institucions però aquestes estan situades en geogràficament).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#performsRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relació que defineix el rol que ha realizat una persona o una entitat respecte a un Event, un Art Work, una Publicació o un Media.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#references</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació serveix per vincular expedients amb Events i Objects (això significa què el títol de l&#39;obra, esdeveniment o publicació esdevé el títol de l&#39;expedient).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tookPlaceAT</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property describes the spatial location of an instance. (Ex. Marsella, Francia, Europa)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tookPlaceAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This porperty describes the spatial location of an event. Ex. The Eva hesse exhibition took place at the Fundació.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tookPlaceOnorWithin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property describes the specific place of an inastance. (Ex. La Fundació, Westminster Abbey, Palazzo Farnese).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:topObjectProperty</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">propiedad que representa la supra actividad que posee una actividad marco</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+
