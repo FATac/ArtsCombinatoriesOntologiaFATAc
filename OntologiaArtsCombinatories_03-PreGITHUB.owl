@@ -799,7 +799,13 @@
         <NamedIndividual IRI="#Consultor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#FAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlataformaAc-codi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#jaumet"/>
@@ -1129,13 +1135,31 @@
         <NamedIndividual IRI="#Consultor"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#FrameActivity"/>
+        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#foaf:Organisation"/>
         <NamedIndividual IRI="#FAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software"/>
+        <NamedIndividual IRI="#PlataformaAc-codi"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#foaf:Person"/>
         <NamedIndividual IRI="#jaumet"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isComposedOf"/>
+        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
+        <NamedIndividual IRI="#PlataformaAc-codi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWorkerOf"/>
+        <NamedIndividual IRI="#jaumet"/>
+        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isWorkerOf"/>
         <NamedIndividual IRI="#jaumet"/>
@@ -1202,8 +1226,8 @@
         <ObjectProperty IRI="#hasSpecificActivity"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#superActivityOf"/>
         <ObjectProperty IRI="#hasSuperActivity"/>
+        <ObjectProperty IRI="#superActivityOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#references"/>
