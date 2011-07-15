@@ -11,16 +11,16 @@
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#AT_Work"/>
     </Declaration>
@@ -205,9 +205,6 @@
         <Class IRI="#PhtoInstallation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Place"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Poet"/>
     </Declaration>
     <Declaration>
@@ -295,10 +292,67 @@
         <Class IRI="#Writer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#cdterms:Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dance"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#foaf:Organisation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#installation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#marble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#photo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#picture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#requiem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sculpture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sonata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tempera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#titanium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#videoart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wood"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsLocatedIn"/>
@@ -314,6 +368,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#createdIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dcterms:isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#dcterms:isVersionOf"/>
@@ -344,6 +404,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTranslation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasparticipedIn"/>
@@ -380,6 +443,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isCirculationSheet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCollectedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComposedOf"/>
@@ -484,7 +550,7 @@
         <ObjectProperty IRI="#isPublicationoftheEvent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPublishing"/>
+        <ObjectProperty IRI="#isPublished"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRecordoftheWork"/>
@@ -494,6 +560,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRegistrationoftheWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReplacedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isResearchAT"/>
@@ -506,6 +575,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTouringEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isWorkerOf"/>
@@ -554,9 +626,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#witnessed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Abstract"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Address"/>
@@ -616,12 +685,6 @@
         <DataProperty IRI="#DeathDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Description"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#DurationTime"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#EndDate"/>
     </Declaration>
     <Declaration>
@@ -670,13 +733,7 @@
         <DataProperty IRI="#Manuscript"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Modified"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Mute"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#NameMaterial"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#NumberCatalogue"/>
@@ -715,12 +772,6 @@
         <DataProperty IRI="#SamplingRate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#SizeArtWork"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#SizePublication"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#StartDate"/>
     </Declaration>
     <Declaration>
@@ -754,16 +805,37 @@
         <DataProperty IRI="#WidthImage"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Year"/>
+        <DataProperty IRI="#dcterms:Abstract"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#dc:Uri"/>
+        <DataProperty IRI="#dcterms:Modified"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#dcterms:Title"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#definitionMaterial"/>
+        <DataProperty IRI="#dcterms:Uri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:extent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:provenance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dcterms:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#definition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#determs:Description"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#foaf:Homepage"/>
@@ -796,16 +868,13 @@
         <DataProperty IRI="#isSelf-produced"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#measurement"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Consultor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#FAT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PlataformaAc-codi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#jaumet"/>
@@ -856,7 +925,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#City"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Close"/>
@@ -876,11 +945,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Continent"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Courses"/>
@@ -1119,12 +1188,84 @@
         <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#dance"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#foaf:Organisation"/>
         <Class IRI="#Agent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#foaf:Person"/>
         <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gold"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#installation"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#marble"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paste"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#performance"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#photo"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#picture"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#publisher"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#requiem"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sculpture"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sonata"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stone"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tempera"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#titanium"/>
+        <Class IRI="#Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#videoart"/>
+        <Class IRI="#KindArtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wood"/>
+        <Class IRI="#Material"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#foaf:Organisation"/>
@@ -1135,31 +1276,13 @@
         <NamedIndividual IRI="#Consultor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FrameActivity"/>
-        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#foaf:Organisation"/>
         <NamedIndividual IRI="#FAT"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Software"/>
-        <NamedIndividual IRI="#PlataformaAc-codi"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#foaf:Person"/>
         <NamedIndividual IRI="#jaumet"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isComposedOf"/>
-        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
-        <NamedIndividual IRI="#PlataformaAc-codi"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isWorkerOf"/>
-        <NamedIndividual IRI="#jaumet"/>
-        <NamedIndividual IRI="#DesencolupamentPlataformaAc"/>
-    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isWorkerOf"/>
         <NamedIndividual IRI="#jaumet"/>
@@ -1167,55 +1290,59 @@
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsLocatedIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasLanguage"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasRepresentation"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSuperActivity"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTranslation"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isConditionReport"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isExternalRelations"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isLanguageof"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isPressandMediaClipping"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isWorkerOf"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#possesses"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tookPlaceOnorWithin"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#consistOf"/>
         <ObjectProperty IRI="#isIncorporatedIn"/>
+        <ObjectProperty IRI="#consistOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#fromsPartOf"/>
@@ -1230,16 +1357,20 @@
         <ObjectProperty IRI="#superActivityOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="#hasType"/>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#isRefrencedBy"/>
+        <ObjectProperty IRI="#references"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#wasOriginOf"/>
         <ObjectProperty IRI="#movedFrom"/>
+        <ObjectProperty IRI="#wasOriginOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#wasDestinationOf"/>
         <ObjectProperty IRI="#movedTo"/>
+        <ObjectProperty IRI="#wasDestinationOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#tookPlaceAt"/>
@@ -1247,7 +1378,7 @@
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsLocatedIn"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#bornIn"/>
@@ -1275,6 +1406,22 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#createdIn"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:isPartOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dcterms:isPartOf"/>
         <Class IRI="#SpecialObjects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1350,6 +1497,10 @@
         <Class IRI="#Video"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Art_Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasparticipedIn"/>
         <Class IRI="#Event"/>
     </ObjectPropertyDomain>
@@ -1400,6 +1551,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCirculationSheet"/>
         <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCollectedIn"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCollectedIn"/>
+        <Class IRI="#SpecialObjects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isComposedOf"/>
@@ -1574,7 +1733,7 @@
         <Class IRI="#Publication"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPublishing"/>
+        <ObjectProperty IRI="#isPublished"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1584,6 +1743,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRegistrationoftheWork"/>
         <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isReplacedBy"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isReplacedBy"/>
+        <Class IRI="#SpecialObjects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isResearchAT"/>
@@ -1679,11 +1846,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsLocatedIn"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#bornIn"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#carriedOutBy"/>
@@ -1695,7 +1862,23 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#createdIn"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:hasVersion"/>
+        <Class IRI="#SpecialObjects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:isPartOf"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dcterms:isPartOf"/>
+        <Class IRI="#SpecialObjects"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#dcterms:isVersionOf"/>
@@ -1707,7 +1890,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#diedIn"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#foaf:knows"/>
@@ -1744,6 +1927,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTranslation"/>
         <Class IRI="#Video"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#KindArtWork"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasparticipedIn"/>
@@ -1792,6 +1979,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isCirculationSheet"/>
         <Class IRI="#CulturalManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCollectedIn"/>
+        <Class IRI="#Colletion"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isComposedOf"/>
@@ -1903,7 +2094,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLocatedAt"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isManagmentofFAT"/>
@@ -1946,11 +2137,11 @@
         <Class IRI="#CulturalManagement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPublishing"/>
+        <ObjectProperty IRI="#isPublished"/>
         <Class IRI="#Media"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPublishing"/>
+        <ObjectProperty IRI="#isPublished"/>
         <Class IRI="#SpecialObjects"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1960,6 +2151,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRegistrationoftheWork"/>
         <Class IRI="#ProtectionPromotionAT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isReplacedBy"/>
+        <Class IRI="#Media"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isReplacedBy"/>
+        <Class IRI="#SpecialObjects"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isResearchAT"/>
@@ -2027,7 +2226,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#tookPlaceAT"/>
-        <Class IRI="#Place"/>
+        <Class IRI="#cdterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#tookPlaceAt"/>
@@ -2039,47 +2238,47 @@
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#Address"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#BirthDate"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Description"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Extension"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#KindofArtWork"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Modified"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#NumberCatalogue"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Orientation"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#Subtitle"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#Year"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty IRI="#dcterms:Modified"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dcterms:created"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#determs:Description"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#foaf:familyName"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#foaf:lastName"/>
@@ -2087,24 +2286,8 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#isATExhibition"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Abstract"/>
-        <Class IRI="#Agent"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Abstract"/>
-        <Class IRI="#Case-Files"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Abstract"/>
-        <Class IRI="#Department"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Abstract"/>
-        <Class IRI="#Event"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Address"/>
         <Class IRI="#Agent"/>
@@ -2226,34 +2409,6 @@
         <Class IRI="#foaf:Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Description"/>
-        <Class IRI="#Agent"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Description"/>
-        <Class IRI="#Case-Files"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Description"/>
-        <Class IRI="#Event"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Description"/>
-        <Class IRI="#Media"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Description"/>
-        <Class IRI="#SpecialObjects"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#DurationTime"/>
-        <Class IRI="#Audio"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#DurationTime"/>
-        <Class IRI="#Video"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#EndDate"/>
         <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
@@ -2322,20 +2477,8 @@
         <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Modified"/>
-        <Class IRI="#Case-Files"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Modified"/>
-        <Class IRI="#Media"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#Mute"/>
         <Class IRI="#Video"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#NameMaterial"/>
-        <Class IRI="#Material"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#NumberCatalogue"/>
@@ -2398,14 +2541,6 @@
         <Class IRI="#Video"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#SizeArtWork"/>
-        <Class IRI="#Art_Work"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#SizePublication"/>
-        <Class IRI="#Publication"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#StartDate"/>
         <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
@@ -2466,15 +2601,27 @@
         <Class IRI="#Image"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Year"/>
-        <Class IRI="#Media"/>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Year"/>
-        <Class IRI="#SpecialObjects"/>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#dc:Uri"/>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Modified"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Modified"/>
         <Class IRI="#Media"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -2490,8 +2637,76 @@
         <Class IRI="#SpecialObjects"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#definitionMaterial"/>
+        <DataProperty IRI="#dcterms:Uri"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:created"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:created"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:extent"/>
+        <Class IRI="#Audio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:extent"/>
+        <Class IRI="#Video"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:format"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:provenance"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:provenance"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:tableOfContents"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:tableOfContents"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#definition"/>
+        <Class IRI="#Colletion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#definition"/>
+        <Class IRI="#KindArtWork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#definition"/>
         <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#determs:Description"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#determs:Description"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#determs:Description"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#determs:Description"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#determs:Description"/>
+        <Class IRI="#SpecialObjects"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#foaf:Homepage"/>
@@ -2549,10 +2764,10 @@
         <DataProperty IRI="#isSelf-produced"/>
         <Class IRI="#CulturalManagement"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#Abstract"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#measurement"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Address"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -2640,10 +2855,6 @@
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Description"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#EndDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
@@ -2700,16 +2911,8 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Modified"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#Mute"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#NameMaterial"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#NumberCatalogue"/>
@@ -2760,14 +2963,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#SizeArtWork"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#SizePublication"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#StartDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
@@ -2812,19 +3007,43 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Year"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#dc:Uri"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <DataProperty IRI="#dcterms:Modified"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#dcterms:Title"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#definitionMaterial"/>
+        <DataProperty IRI="#dcterms:Uri"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dcterms:created"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dcterms:format"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dcterms:provenance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dcterms:tableOfContents"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#definition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#determs:Description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2867,6 +3086,10 @@
         <DataProperty IRI="#isSelf-produced"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#measurement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AT_Work</IRI>
@@ -2876,11 +3099,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AT_Work_FAT_Colletion</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This subentity represents Antoni Tàpies&#39;s art works collected by the Fundació.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Abstract</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A summary or statement of the contents of a Case-Files, Event, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2938,6 +3156,11 @@ o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Conservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Descripció de l&#39;estat de conservació d&#39;un objecte.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CoverPublications</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">paperback, hardcover, Clothbound.</Literal>
     </AnnotationAssertion>
@@ -2965,6 +3188,12 @@ o
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Event</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This entity represents an activity (exposition,  workshop, conference, etc.). It also represents the activity and  functioning of the institution  not linked to any specific activity  (advertising of the institution,  administrative documentation, protocol events and actions, external relations, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Extensió del software
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3097,6 +3326,11 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cdterms:Location</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A spatial region or named place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#consistOf</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This property identifies the instances of materials of Art Work is composed.
 </Literal>
@@ -3111,8 +3345,64 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#dc:Uri</IRI>
+        <IRI>#dcterms:Abstract</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A summary or statement of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:Modified</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Date on which the resource was changed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:Uri</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Is the Uri of a media-file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:created</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Date of creation of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:extent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The size or duration of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:format</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The file format, physical medium of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:hasVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A related resource that is a version, edition, or adaptation of the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A related resource in which the described resource is physically or logically included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:provenance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:tableOfContents</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A list of subunits of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#definition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">an exact statement or description of the nature, scope, or meaning of something. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#determs:Description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An account of the resource.
+Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3162,6 +3452,12 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasTranslation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació defineix en quina llengua s&#39;ha traduït d&#39;un art work, una publicació i un media.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defineix la relació entre un objecte i la seva tipologia.
+Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3383,7 +3679,7 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isPublishing</IRI>
+        <IRI>#isPublished</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet definir el rol que ha tingut una persona o organització (grups d&#39;artistes) en relació a un esdeveniment, una obra d&#39;art, una publicació o un media.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -3395,6 +3691,11 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isRegistrationoftheWork</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al registre d&#39;una obra de la Col·lecció.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isReplacedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A related resource that supplants, displaces, or supersedes the described resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3463,7 +3764,7 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>owl:topObjectProperty</AbbreviatedIRI>
+        <AbbreviatedIRI>:topObjectProperty</AbbreviatedIRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">propiedad que representa la supra actividad que posee una actividad marco</Literal>
     </AnnotationAssertion>
 </Ontology>
