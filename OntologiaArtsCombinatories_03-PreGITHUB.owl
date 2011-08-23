@@ -8,6 +8,7 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
+
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -876,6 +877,9 @@
         <NamedIndividual IRI="#FAT"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#jaume"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#jaumet"/>
     </Declaration>
     <SubClassOf>
@@ -1279,6 +1283,10 @@
         <NamedIndividual IRI="#FAT"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#jaume"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#foaf:Person"/>
         <NamedIndividual IRI="#jaumet"/>
     </ClassAssertion>
@@ -1356,12 +1364,12 @@
         <ObjectProperty IRI="#superActivityOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasType"/>
         <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectProperty IRI="#hasType"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isRefrencedBy"/>
         <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="#isRefrencedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#movedFrom"/>
