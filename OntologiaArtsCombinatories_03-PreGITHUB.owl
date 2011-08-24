@@ -724,9 +724,6 @@
         <DataProperty IRI="#ISBN"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#KindofArtWork"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#License"/>
     </Declaration>
     <Declaration>
@@ -808,6 +805,9 @@
         <DataProperty IRI="#dcterms:Abstract"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#dcterms:Description"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#dcterms:Modified"/>
     </Declaration>
     <Declaration>
@@ -833,9 +833,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#definition"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#determs:Description"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#foaf:Homepage"/>
@@ -1368,8 +1365,8 @@
         <ObjectProperty IRI="#hasType"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#references"/>
         <ObjectProperty IRI="#isRefrencedBy"/>
+        <ObjectProperty IRI="#references"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#movedFrom"/>
@@ -1383,6 +1380,9 @@
         <ObjectProperty IRI="#tookPlaceAt"/>
         <ObjectProperty IRI="#witnessed"/>
     </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isPromotionandInformationoboutFAT"/>
+    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsLocatedIn"/>
         <Class IRI="#cdterms:Location"/>
@@ -2256,10 +2256,6 @@
         <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#KindofArtWork"/>
-        <DataProperty abbreviatedIRI=":topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#NumberCatalogue"/>
         <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
@@ -2272,15 +2268,15 @@
         <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#dcterms:Description"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#dcterms:Modified"/>
         <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#dcterms:created"/>
-        <DataProperty abbreviatedIRI=":topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#determs:Description"/>
         <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -2393,11 +2389,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#CreditLine"/>
-        <Class IRI="#Art_Work"/>
+        <Class IRI="#Media"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#CreditLine"/>
-        <Class IRI="#Media"/>
+        <Class IRI="#SpecialObjects"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#CurrentlySituation"/>
@@ -2452,6 +2448,10 @@
         <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Fax"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#FileSize"/>
         <Class IRI="#Media"/>
     </DataPropertyDomain>
@@ -2474,10 +2474,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#ISBN"/>
         <Class IRI="#Publication"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#KindofArtWork"/>
-        <Class IRI="#Art_Work"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Manuscript"/>
@@ -2524,6 +2520,10 @@
         <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Phone"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#RegisterNumber"/>
         <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
@@ -2562,6 +2562,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#StartDateLend"/>
         <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDateLend"/>
+        <Class IRI="#Publication"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Subtitle"/>
@@ -2624,12 +2628,36 @@
         <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Class IRI="#Case-Files"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Class IRI="#SpecialObjects"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#dcterms:Modified"/>
         <Class IRI="#Case-Files"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#dcterms:Modified"/>
         <Class IRI="#Media"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dcterms:Title"/>
+        <Class IRI="#Colletion"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#dcterms:Title"/>
@@ -2696,24 +2724,8 @@
         <Class IRI="#Material"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#determs:Description"/>
-        <Class IRI="#Agent"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#determs:Description"/>
-        <Class IRI="#Case-Files"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#determs:Description"/>
-        <Class IRI="#Event"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#determs:Description"/>
-        <Class IRI="#Media"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#determs:Description"/>
-        <Class IRI="#SpecialObjects"/>
+        <DataProperty IRI="#definition"/>
+        <Class IRI="#Role"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#foaf:Homepage"/>
@@ -2744,6 +2756,10 @@
         <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#foaf:firstName"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#foaf:gender"/>
         <Class IRI="#foaf:Person"/>
     </DataPropertyDomain>
@@ -2758,6 +2774,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#foaf:mbox"/>
         <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foaf:mbox"/>
+        <Class IRI="#Department"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPhysicallVersion"/>
@@ -3018,6 +3038,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#dcterms:Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#dcterms:Modified"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -3047,10 +3071,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#definition"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#determs:Description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3230,11 +3250,6 @@ o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KindofArtWork</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Atenció, pot ser és una relació amb l&#39;entitat type (subentitat kind of art work)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Language</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ISO 639:1988</Literal>
     </AnnotationAssertion>
@@ -3357,6 +3372,12 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:Description</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An account of the resource.
+Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#dcterms:Modified</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Date on which the resource was changed.</Literal>
     </AnnotationAssertion>
@@ -3404,12 +3425,6 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#definition</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">an exact statement or description of the nature, scope, or meaning of something. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#determs:Description</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">An account of the resource.
-Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3611,7 +3626,7 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isLegalProceeding</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
