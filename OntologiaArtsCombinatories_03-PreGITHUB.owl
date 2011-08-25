@@ -292,10 +292,10 @@
         <Class IRI="#Writer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#dance"/>
+        <Class IRI="#dcterms:Location"/>
     </Declaration>
     <Declaration>
         <Class IRI="#foaf:Organisation"/>
@@ -868,10 +868,34 @@
         <DataProperty IRI="#measurement"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#A._Mendieta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catalan"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Consultor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#FAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_Habana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nova_York"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spanish"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#jaume"/>
@@ -925,7 +949,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#City"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Close"/>
@@ -945,11 +969,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Continent"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Courses"/>
@@ -1272,12 +1296,44 @@
         <Class IRI="#foaf:Person"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#foaf:Person"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrameActivity"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalManagement"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Catalan"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Role"/>
         <NamedIndividual IRI="#Consultor"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#foaf:Organisation"/>
         <NamedIndividual IRI="#FAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#La_Habana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Nova_York"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Spanish"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Agent"/>
@@ -1288,10 +1344,168 @@
         <NamedIndividual IRI="#jaumet"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bornIn"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <NamedIndividual IRI="#La_Habana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diedIn"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <NamedIndividual IRI="#Nova_York"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasparticipedIn"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <NamedIndividual IRI="#Catalan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <NamedIndividual IRI="#Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <NamedIndividual IRI="#Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCase-Fileproducer"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <NamedIndividual IRI="#jaume"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#references"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isWorkerOf"/>
         <NamedIndividual IRI="#jaumet"/>
         <NamedIndividual IRI="#FAT"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#BirthDate"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1948 &#39;-&#39; 01 &#39;-&#39; 01 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CV"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;string">Ana Mendieta nace en el año 1948, en la Habana (Cuba). En 1961, Mendieta se exilia con su hermana Raquelin a Estados Unidos, para salir del Régimen del dictador Castro en el que estaba inmerso su país. En EEUU pasó varios años en los que no puso pie en su país de origen, esto causó gran dolor psíquico a la artista, tanto, que en muchas ocasiones se convierte en la temática principal de su obra.
+
+Ana Mendieta era una artista polifacética, que tocó distintos campos dentro del mundo del Arte (performances, body art, vídeos, fotografías, dibujos, instalaciones y esculturas), pero en cada uno que trabajó dejó su huella personal.
+
+Ana Mendieta tuvo una carrera corta, pero sin duda intensa, productiva y en cierta parte, también polémica. 
+
+Ana Mendieta empezó su formación académica y artística en la universidad de Iowa, trabajando el expresionismo, pero pronto cambio su forma de trabajar y sus intereses, ingresando en Intermedia Program and Center for New Performing Arts, donde comenzó a practicar la Performance o el Body Art, utilizando su cuerpo como medio o canal para hacer Arte, ambas modalidades muy de moda en los años setenta. 
+
+Ana Mendieta fue una de las artistas que más promovió la performance, el Body Art, y también el Land Art (Arte en la tierra, con la tierra, o en la naturaleza).
+
+Los temas en los que trabajo a lo largo de su carrera artística fueron el exilio, la naturaleza, lo espiritual, lo femenino. 
+
+Ana Mendieta conecta la naturaleza con la humanidad, relaciona lo humano con la naturaleza, de tal manera que casi camufla su cuerpo, como se puede apreciar en su colección Silueta Series. Podemos pensar que incluso asocia la imagen de la naturaleza a lo femenino. </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeathDate"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1976 &#39;-&#39; 01 &#39;-&#39; 01 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foaf:firstName"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;string">Anna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foaf:gender"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foaf:lastName"/>
+        <NamedIndividual IRI="#A._Mendieta"/>
+        <Literal datatypeIRI="&xsd;string">Mendieta
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EndDate"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 03 &#39;-&#39; 30 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 0 (&#39;.&#39; 0+)? (0000)?
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 01 &#39;-&#39; 22 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <NamedIndividual IRI="#Ana_Mendieta"/>
+        <Literal datatypeIRI="&xsd;string">La mort prematura d’Ana Mendieta i el caràcter efímer de les seves creacions han contribuït a que l’obra d’aquesta artista, poètica i crítica alhora, avui no es conegui prou. Nascuda a l’Havana el 1948 en el si d’una família benestant, va ser enviada als Estats Units amb la seva germana Raquelín, quan només tenia dotze anys, i criada en orfenats americans.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Case-fileDescriptionLevel"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;string">Unitat documental composta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EndDate"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 10 &#39;-&#39; 30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ExpurgateDate"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1998 &#39;-&#39; 10 &#39;-&#39; 30
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Holding"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;string">FAT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Manuscript"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;string">Manuscrit ; Mecanografiat ; Imprès</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RegisterNumber"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;integer">01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1996 &#39;-&#39; 01 &#39;-&#39; 22 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
+
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Volum"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;string">214 u. (774 fulls); suport paper; suport fotogràfic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dcterms:Abstract"/>
+        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
+        <Literal datatypeIRI="&xsd;string">Agrupa 19 subexpedients relatius a l&#39;organització de l&#39;exposició, l&#39;artista Ana Mendieta, les obres, el muntatge, els materials de difusió, la comunicació a la premsa, el catàleg i la itinerància de l&#39;exposició al Centro Galego de Arte Contemporánea.</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsLocatedIn"/>
         <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
@@ -1365,8 +1579,8 @@
         <ObjectProperty IRI="#hasType"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isRefrencedBy"/>
         <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="#isRefrencedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#movedFrom"/>
@@ -1385,7 +1599,7 @@
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsLocatedIn"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#bornIn"/>
@@ -1853,11 +2067,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsLocatedIn"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#bornIn"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#carriedOutBy"/>
@@ -1869,7 +2083,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#createdIn"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#dcterms:hasVersion"/>
@@ -1897,7 +2111,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#diedIn"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#foaf:knows"/>
@@ -2101,7 +2315,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLocatedAt"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isManagmentofFAT"/>
@@ -2233,7 +2447,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#tookPlaceAT"/>
-        <Class IRI="#cdterms:Location"/>
+        <Class IRI="#dcterms:Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#tookPlaceAt"/>
@@ -2285,7 +2499,7 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#foaf:lastName"/>
-        <DataProperty IRI="#foaf:givenName"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#isATExhibition"/>
@@ -3348,11 +3562,6 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cdterms:Location</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A spatial region or named place.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#consistOf</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This property identifies the instances of materials of Art Work is composed.
 </Literal>
@@ -3375,6 +3584,11 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </Literal>
         <IRI>#dcterms:Description</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">An account of the resource.
 Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dcterms:Location</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A spatial region or named place.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3789,6 +4003,10 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <AbbreviatedIRI>:topObjectProperty</AbbreviatedIRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">propiedad que representa la supra actividad que posee una actividad marco</Literal>
     </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DatatypeDefinition>
 </Ontology>
 
 
