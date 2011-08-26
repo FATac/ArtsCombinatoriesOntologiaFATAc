@@ -1394,35 +1394,6 @@
         <NamedIndividual IRI="#FAT"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#BirthDate"/>
-        <NamedIndividual IRI="#A._Mendieta"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1948 &#39;-&#39; 01 &#39;-&#39; 01 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CV"/>
-        <NamedIndividual IRI="#A._Mendieta"/>
-        <Literal datatypeIRI="&xsd;string">Ana Mendieta nace en el año 1948, en la Habana (Cuba). En 1961, Mendieta se exilia con su hermana Raquelin a Estados Unidos, para salir del Régimen del dictador Castro en el que estaba inmerso su país. En EEUU pasó varios años en los que no puso pie en su país de origen, esto causó gran dolor psíquico a la artista, tanto, que en muchas ocasiones se convierte en la temática principal de su obra.
-
-Ana Mendieta era una artista polifacética, que tocó distintos campos dentro del mundo del Arte (performances, body art, vídeos, fotografías, dibujos, instalaciones y esculturas), pero en cada uno que trabajó dejó su huella personal.
-
-Ana Mendieta tuvo una carrera corta, pero sin duda intensa, productiva y en cierta parte, también polémica. 
-
-Ana Mendieta empezó su formación académica y artística en la universidad de Iowa, trabajando el expresionismo, pero pronto cambio su forma de trabajar y sus intereses, ingresando en Intermedia Program and Center for New Performing Arts, donde comenzó a practicar la Performance o el Body Art, utilizando su cuerpo como medio o canal para hacer Arte, ambas modalidades muy de moda en los años setenta. 
-
-Ana Mendieta fue una de las artistas que más promovió la performance, el Body Art, y también el Land Art (Arte en la tierra, con la tierra, o en la naturaleza).
-
-Los temas en los que trabajo a lo largo de su carrera artística fueron el exilio, la naturaleza, lo espiritual, lo femenino. 
-
-Ana Mendieta conecta la naturaleza con la humanidad, relaciona lo humano con la naturaleza, de tal manera que casi camufla su cuerpo, como se puede apreciar en su colección Silueta Series. Podemos pensar que incluso asocia la imagen de la naturaleza a lo femenino. </Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#DeathDate"/>
-        <NamedIndividual IRI="#A._Mendieta"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1976 &#39;-&#39; 01 &#39;-&#39; 01 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
-
-</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#foaf:firstName"/>
         <NamedIndividual IRI="#A._Mendieta"/>
         <Literal datatypeIRI="&xsd;string">Anna</Literal>
@@ -1439,40 +1410,9 @@ Ana Mendieta conecta la naturaleza con la humanidad, relaciona lo humano con la 
 </Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#EndDate"/>
-        <NamedIndividual IRI="#Ana_Mendieta"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 03 &#39;-&#39; 30 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 0 (&#39;.&#39; 0+)? (0000)?
-
-</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#Ana_Mendieta"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 01 &#39;-&#39; 22 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
-
-</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#dcterms:Abstract"/>
         <NamedIndividual IRI="#Ana_Mendieta"/>
         <Literal datatypeIRI="&xsd;string">La mort prematura d’Ana Mendieta i el caràcter efímer de les seves creacions han contribuït a que l’obra d’aquesta artista, poètica i crítica alhora, avui no es conegui prou. Nascuda a l’Havana el 1948 en el si d’una família benestant, va ser enviada als Estats Units amb la seva germana Raquelín, quan només tenia dotze anys, i criada en orfenats americans.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Case-fileDescriptionLevel"/>
-        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
-        <Literal datatypeIRI="&xsd;string">Unitat documental composta</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#EndDate"/>
-        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1997 &#39;-&#39; 10 &#39;-&#39; 30</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ExpurgateDate"/>
-        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1998 &#39;-&#39; 10 &#39;-&#39; 30
-
-</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Holding"/>
@@ -1487,14 +1427,7 @@ Ana Mendieta conecta la naturaleza con la humanidad, relaciona lo humano con la 
     <DataPropertyAssertion>
         <DataProperty IRI="#RegisterNumber"/>
         <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
-        <Literal datatypeIRI="&xsd;integer">01</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#Ana_Mendieta_expedient"/>
-        <Literal datatypeIRI="&xsd;dateTime">&#39;-&#39;? 1996 &#39;-&#39; 01 &#39;-&#39; 22 &#39;T&#39; 00 &#39;:&#39; 00 &#39;:&#39; 00 (&#39;.&#39; 0+)? (0000)?
-
-</Literal>
+        <Literal datatypeIRI="&xsd;string">01</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Volum"/>
@@ -1579,8 +1512,8 @@ Ana Mendieta conecta la naturaleza con la humanidad, relaciona lo humano con la 
         <ObjectProperty IRI="#hasType"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#references"/>
         <ObjectProperty IRI="#isRefrencedBy"/>
+        <ObjectProperty IRI="#references"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#movedFrom"/>
