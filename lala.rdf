@@ -1,0 +1,2875 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1304926436539 "http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#" >
+    <!ENTITY foaf "http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:" >
+    <!ENTITY cdterms "http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#cdterms:" >
+    <!ENTITY determs "http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#determs:" >
+    <!ENTITY dcterms "http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:Ontology1304926436539="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:determs="&Ontology1304926436539;determs:"
+     xmlns:foaf="&Ontology1304926436539;foaf:"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cdterms="&Ontology1304926436539;cdterms:"
+     xmlns:dcterms="&Ontology1304926436539;dcterms:">
+    <Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#IsLocatedIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;IsLocatedIn">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#bornIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;bornIn">
+        <rdfs:comment>Lloc geogràfic on ha nascut un persona.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#carriedOutBy -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;carriedOutBy">
+        <rdfs:comment>Relació que defineix quina persona ha realitzat un Event, un Art Work, una Publicació o un Media.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#consistOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;consistOf">
+        <rdfs:comment>This property identifies the instances of materials of Art Work is composed.
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Material"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#createdIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;createdIn">
+        <rdfs:comment>Lloc geogràfic on s&#39;ha creta una obra d&#39;art, una publicació o un media. Location.
+
+
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:hasVersion -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;dcterms:hasVersion">
+        <rdfs:comment>A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:isPartOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;dcterms:isPartOf">
+        <rdfs:comment>A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:isVersionOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;dcterms:isVersionOf">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#diedIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;diedIn">
+        <rdfs:comment>Lloc geogràfic on ha mort una persona.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:knows -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;foaf:knows">
+        <rdfs:comment>relates a person to another person that he or she knows</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#fromsPartOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;fromsPartOf">
+        <inverseOf rdf:resource="&Ontology1304926436539;isComposedOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasData -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasData">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Data"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Rights"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasLanguage -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasLanguage">
+        <rdfs:comment>Aquesta relació defineix en quina llengua està un art work, d&#39;una publicació i d&#39;un media.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Language"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasRepresentation -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasRepresentation">
+        <rdfs:comment>Aquesta relació vincula una imatge que és representativa d&#39;un esdeveniment i d&#39;una obra d&#39;art i d&#39;una publicació.
+
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasSpecificActivity -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasSpecificActivity">
+        <rdfs:comment>propiedad que representa las actividades específicas de una actividad marco, o una actividad específica que es subactividad de otra específica.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;FrameActivity"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecificActivity"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecificActivity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasSuperActivity -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasSuperActivity">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;FrameActivity"/>
+        <inverseOf rdf:resource="&Ontology1304926436539;superActivityOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasTranslation -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasTranslation">
+        <rdfs:comment>Aquesta relació defineix en quina llengua s&#39;ha traduït d&#39;un art work, una publicació i un media.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Text"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Text"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasType -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasType">
+        <rdfs:comment>Defineix la relació entre un objecte i la seva tipologia.
+Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, etc.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasparticipedIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;hasparticipedIn">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isAdministrativeOrganisation -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isAdministrativeOrganisation">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió administrativa de l&#39;entitat (Polítiques i procediments, circulars, organigrames, llocs de treball, gestió dels recursos humans, del patrimoni, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isArchiveServices -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isArchiveServices">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels serveis l&#39;Arxiu (Préstec, reprografia, consulta, difusió, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isAssetManagment -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isAssetManagment">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del patrimoni de l&#39;entitat (operacions de béns mobles, inventari de béns mobles, utilització de béns mobles, utilització de béns inmobñes, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isAuthors -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isAuthors">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als autors que participen en una activitat (Event) (cartes, permisos, negociacions amb els autors que tan poden ser artistes, conferenciants, escriptors, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isBookshopServices -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isBookshopServices">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la llibreria (inventaris, productes, correspondència, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCase-Fileproducer -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCase-Fileproducer">
+        <rdfs:comment>Aquesta relació permet definir quines persones o departament de la Fundació són les productores d&#39;un expedient de l&#39;Arxiu.
+
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Department"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCataloguingOriginalWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCataloguingOriginalWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra original d&#39;Antoni Tàpies (catàleg d&#39;obra original, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCataloguingoftheGraphicWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCataloguingoftheGraphicWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra gràfica d&#39;Antoni Tàpies (catàleg d&#39;obra gràfica, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCertificationofOriginalWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCertificationofOriginalWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra original d&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCertificationoftheGraphicWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCertificationoftheGraphicWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra gràfica de l&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCirculationSheet -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCirculationSheet">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al full de préstec de les obres d&#39;art d&#39;un esdeveniment)  (fulls de prèstec, correspondència amb els prestadors, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCollectedIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCollectedIn">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Colletion"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isComposedOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isComposedOf">
+        <rdfs:comment>This property describes specific components that are individually documented.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isComunicationostheEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isComunicationostheEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la comunicació d&#39;un esdeveniment (notes de premsa, gestió de la publicitat, elements de difusió, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isConditionReport -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isConditionReport">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all informes de condicions de les obres d&#39;art d&#39;un esdeveniment (informes de condició, fotografia de les onbres, correspondència amb restauradors, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isConservationandRestoration -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isConservationandRestoration">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;estat de conservació i restauració de l&#39;expedient d&#39;una obra de la col·lecció de la Fundació  (informes de restauració in de conservació, fotografies, etc).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isCopyrightProtection -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isCopyrightProtection">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la protecció de drets d&#39;autor de l&#39;obra de l&#39;Antoni Tàpies (permisos de reproducció de l&#39;obra, sol·licituds, gesions amb VEGAP, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isDescriptionandCondition -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isDescriptionandCondition">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres de la col·lecció de la Fundació i a la catalogació de les obres de l&#39;Antoni Tàpies  (informes de condició, etc.).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isDescriptionofConditionEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isDescriptionofConditionEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres d&#39;un esdeveniment  (informes de condició, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isEducationalServices -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isEducationalServices">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Servei educatiu (visites guiades, organització d&#39;activitats, tallers, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isExternalRelations -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isExternalRelations">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isFilmedBy -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isFilmedBy">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isFinancialResorceManagment -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isFinancialResorceManagment">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos financers de l&#39;entitat (pressupostos, gestió d&#39;ingressos i de despeses, anàlisis i conciliacions de comptes, impostos i obligacions fiscals, contractació administrativa, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isFriendsoftheFAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isFriendsoftheFAT">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels Amics de la Fundació (sol·licitud, correspondència, activitats específiques, relacions amb els Amic d&#39;altres institucions, etc).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isFundacioLogo -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isFundacioLogo">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Logo de l&#39;entitat (imatges i aplicacions, imatge corporatiova).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isHistoryofFAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isHistoryofFAT">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la Història de la Fundació.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isHumanResorces -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isHumanResorces">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos humans de l&#39;entitat (Accés, selecció i provisió, expedientb de personal, relacions laborarls, formació i moviments de personal).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isIncorporatedIn -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isIncorporatedIn">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Material"/>
+        <inverseOf rdf:resource="&Ontology1304926436539;consistOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isInstallationGuide -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isInstallationGuide">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isInterventionReport -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isInterventionReport">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la intervenció d&#39;una obra d&#39;art de la col·lecció de la Fundació.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLanguageof -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLanguageof">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Language"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLegalProceeding -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLegalProceeding">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Text"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLegislationandLegalMatters -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLegislationandLegalMatters">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als assumptes jurídics de l&#39;entitat (legislació pròpia de les fundacions, lesgislació general, acords i convenis, litigis, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLibraryServices -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLibraryServices">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la Biblioteca (préstec intern, reprografia, consulta, difusió, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLoanofWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLoanofWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels préstecs de les obres de la Col·lecció de la Fundació.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isLocatedAt -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isLocatedAt">
+        <rdfs:comment>Lloc geogràfic d&#39;una organització.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isManagmentofFAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isManagmentofFAT">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió a la direcció de l&#39;entitat (òrgans rectors, sessions de junta del patronat, memòria d&#39;activitats, membres del patronat, documents estratègics, avaluacions de direcció, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isOrganisationoftheEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isOrganisationoftheEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;organització d&#39;un esdeveniment.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPossessedBy -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPossessedBy">
+        <rdfs:comment>Aquesta relació permet definir la possessió d&#39;una persona o organització d&#39;una obra d&#39;art.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPressandMediaClipping -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPressandMediaClipping">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als reculls de premsa i comunicació referents a la Fundació (no als esdeveniments que organitza).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPresskitsandPressReleases -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPresskitsandPressReleases">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als dossiers i notes de premsa de la Fundació (no als esdeveniments que organitza).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isProductioniftheEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isProductioniftheEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la producció d&#39;un esdeveniment.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPromotionandInformationoboutFAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPromotionandInformationoboutFAT">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa promoció i difusió de l&#39;entitat.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isProtocolEventsActions -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isProtocolEventsActions">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als actes i atencions protocolàries (commemoracions, discursos, presentacions, escrits corporatius, visites i viatges, felicitacions, agraïments i condols, etc.)</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPublicationManagment -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPublicationManagment">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions, tan de la Fundació com de l&#39;obra i figura d&#39;Antoni Tàpies (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPublicationoftheEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPublicationoftheEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions relatives als esdevenimets que la Fundació organitza (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isPublished -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isPublished">
+        <rdfs:comment>Aquesta relació permet definir el rol que ha tingut una persona o organització (grups d&#39;artistes) en relació a un esdeveniment, una obra d&#39;art, una publicació o un media.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isRecordoftheWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isRecordoftheWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la fitxa d&#39;una obra de la Col·lecció.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isRefrencedBy -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isRefrencedBy">
+        <inverseOf rdf:resource="&Ontology1304926436539;references"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isRegistrationoftheWork -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isRegistrationoftheWork">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al registre d&#39;una obra de la Col·lecció.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isReplacedBy -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isReplacedBy">
+        <rdfs:comment>A related resource that supplants, displaces, or supersedes the described resource.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isResearchAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isResearchAT">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a les investigacions que la Fundació porta a terme sobre l&#39;obra i la vida de l&#39;Antoni Tàpies.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;ProtectionPromotionAT"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isSpaceandSet-Up -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isSpaceandSet-Up">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;espai i muntatge d&#39;un esdeveniment (plànols, cartel·les, disseny d&#39;espis, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isStatusandRules -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isStatusandRules">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all estatuts i reglamets de l&#39;entitat i les seves respectives modificacions.</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Administration"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Text"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isTouringEvent -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isTouringEvent">
+        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</rdfs:comment>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isTypeOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isTypeOf">
+        <inverseOf rdf:resource="&Ontology1304926436539;hasType"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isWorkerOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isWorkerOf">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Department"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isWorks -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;isWorks">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#movedFrom -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;movedFrom">
+        <rdfs:comment>A move will be linked to an origin, such as the move of an artefact from storage to dispalu. Ex. The movement to the Tut-Ankh-Amun exhibition moved from the Egiptian Museum in Cairo.
+
+(D&#39;aquí s&#39;hauria d&#39;inferir les localitzacions geogràfiques. De fet el moviment serà entre institucions però aquestes estan situades en geogràficament).
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+        <inverseOf rdf:resource="&Ontology1304926436539;wasOriginOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#movedTo -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;movedTo">
+        <rdfs:comment>A move will be linked to a destination, such as the move of an artfact from storage to display. (D?aquí s&#39;hauria d&#39;inferir les localitzacions geogràfiques. De fet el moviment serà entre institucions però aquestes estan situades en geogràficament).
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+        <inverseOf rdf:resource="&Ontology1304926436539;wasDestinationOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#performsRole -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;performsRole">
+        <rdfs:comment>Relació que defineix el rol que ha realizat una persona o una entitat respecte a un Event, un Art Work, una Publicació o un Media.
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Role"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#possesses -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;possesses">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#references -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;references">
+        <rdfs:comment>Aquesta relació serveix per vincular expedients amb Events i Objects (això significa què el títol de l&#39;obra, esdeveniment o publicació esdevé el títol de l&#39;expedient).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#represents -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;represents">
+        <rdfs:range rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#specificActivityOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;specificActivityOf">
+        <inverseOf rdf:resource="&Ontology1304926436539;hasSpecificActivity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#superActivityOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;superActivityOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#tookPlaceAT -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;tookPlaceAT">
+        <rdfs:comment>This property describes the spatial location of an instance. (Ex. Marsella, Francia, Europa)</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#tookPlaceAt -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;tookPlaceAt">
+        <rdfs:comment>This porperty describes the spatial location of an event. Ex. The Eva hesse exhibition took place at the Fundació.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+        <inverseOf rdf:resource="&Ontology1304926436539;witnessed"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#tookPlaceOnorWithin -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;tookPlaceOnorWithin">
+        <rdfs:comment>This property describes the specific place of an inastance. (Ex. La Fundació, Westminster Abbey, Palazzo Farnese).</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Department"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#wasDestinationOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;wasDestinationOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#wasOriginOf -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;wasOriginOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#witnessed -->
+
+    <ObjectProperty rdf:about="&Ontology1304926436539;witnessed"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:comment>propiedad que representa la supra actividad que posee una actividad marco</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Address -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Address">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AdmissionDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;AdmissionDate">
+        <rdfs:comment>The date when an art work is being allowed to enter a place, organization, or institution.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AdmissionSource -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;AdmissionSource">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AspectRate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;AspectRate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AudioChannels -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;AudioChannels">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AudioCodec -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;AudioCodec">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#BirthDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;BirthDate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#BitRate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;BitRate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CV -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;CV">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CameraModel -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;CameraModel">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Case-fileDescriptionLevel -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Case-fileDescriptionLevel">
+        <rdfs:comment>Aixòdiu si el case-file es:- 
+Una unitat documental simple 
+o 
+- una de composta</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>compound</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>simple</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ColorIllustrations -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ColorIllustrations">
+        <rdfs:comment>Colour or black and white colour illustrations.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Text"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ColorMode -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ColorMode">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">B/N</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Color</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">to complete</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ColorSystem -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ColorSystem">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">RGB</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">To complete</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Conservation -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Conservation">
+        <rdfs:comment>Descripció de l&#39;estat de conservació d&#39;un objecte.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CoverPublications -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;CoverPublications">
+        <rdfs:comment>paperback, hardcover, Clothbound.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CreditLine -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;CreditLine">
+        <rdfs:comment>Caption.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CurrentlySituation -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;CurrentlySituation">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#DeathDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;DeathDate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#EndDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;EndDate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#EndDateLend -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;EndDateLend">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#EstimatedValue -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;EstimatedValue">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ExpurgateDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ExpurgateDate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Extension -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Extension">
+        <rdfs:comment>Extensió del software
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Software"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FatacId -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;FatacId">
+        <rdfs:comment>Número identificador únic de tots els objectes de l&#39;ontologia.
+</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Fax -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Fax">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FileSize -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;FileSize">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FooterImage -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;FooterImage">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FrameRate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;FrameRate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FullVersion -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;FullVersion">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Holding -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Holding">
+        <rdfs:comment>fons</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ISBN -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ISBN">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Publication"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#KindofArtWork -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;KindofArtWork">
+        <rdfs:comment>Atenció, pot ser és una relació amb l&#39;entitat type (subentitat kind of art work)</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#License -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;License"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Manuscript -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Manuscript">
+        <rdfs:comment> written by hand, typed or printed</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Mute -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Mute">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#NumberCatalogue -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;NumberCatalogue">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#NumberT -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;NumberT">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#NumberofCopies -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;NumberofCopies">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#NumberofPages -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;NumberofPages">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Text"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#OperatingSystem -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;OperatingSystem">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Software"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Orientation -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Orientation">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#OriginalSource -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;OriginalSource">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Phone -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Phone">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#RegisterNumber -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;RegisterNumber">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Resolution -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Resolution">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Restorations -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Restorations">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#SamplingRate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;SamplingRate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#StartDate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;StartDate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#StartDateLend -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;StartDateLend">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work_FAT_Colletion"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Subtitle -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Subtitle">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Symbolmaterial -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Symbolmaterial">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Material"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#TechniqueArtWork -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;TechniqueArtWork">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ToExpurgate -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;ToExpurgate">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Value -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Value">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Data"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Vegap -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Vegap">
+        <rdfs:comment>If VEGAP  has the digital image.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;AT_Work"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#VideoCodec -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;VideoCodec">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Volum -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;Volum">
+        <rdfs:comment>Description: quantity of items (paper, photo, videos, etc) related related to the file-case.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#WidthImage -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;WidthImage">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Image"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:Abstract -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:Abstract">
+        <rdfs:comment>A summary or statement of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Department"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:Modified -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:Modified">
+        <rdfs:comment>Date on which the resource was changed.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:Title -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:Title">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:Uri -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:Uri">
+        <rdfs:comment>Is the Uri of a media-file.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:created -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:created">
+        <rdfs:comment>Date of creation of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:extent -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:extent">
+        <rdfs:comment>The size or duration of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Audio"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Video"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:format -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:format">
+        <rdfs:comment>The file format, physical medium of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:provenance -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:provenance">
+        <rdfs:comment>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dcterms:tableOfContents -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;dcterms:tableOfContents">
+        <rdfs:comment>A list of subunits of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#definition -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;definition">
+        <rdfs:comment>an exact statement or description of the nature, scope, or meaning of something. </rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Colletion"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;KindArtWork"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Material"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#determs:Description -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;determs:Description">
+        <rdfs:comment>An account of the resource.
+Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:Homepage -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:Homepage">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Rights"/>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:familyName -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:familyName">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:firstName -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:firstName">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:gender -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:gender">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:givenName -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:givenName">
+        <rdfs:comment>the given name of some person
+</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:lastName -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:lastName">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:subPropertyOf rdf:resource="&Ontology1304926436539;foaf:givenName"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:mbox -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;foaf:mbox">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#hasPhysicallVersion -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;hasPhysicallVersion">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isATExhibition -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;isATExhibition">
+        <rdfs:comment>Related to the Events. If an exhibition is about AT or not.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#isSelf-produced -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;isSelf-produced">
+        <rdfs:comment>Related to the Events. If an exhibition is produced by FAT or not.</rdfs:comment>
+        <rdfs:domain rdf:resource="&Ontology1304926436539;CulturalManagement"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#measurement -->
+
+    <DatatypeProperty rdf:about="&Ontology1304926436539;measurement">
+        <rdfs:domain rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AT_Work -->
+
+    <Class rdf:about="&Ontology1304926436539;AT_Work">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Art_Work"/>
+        <rdfs:comment>This subentity represents Antoni Tàpies&#39;s arts works.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#AT_Work_FAT_Colletion -->
+
+    <Class rdf:about="&Ontology1304926436539;AT_Work_FAT_Colletion">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;AT_Work"/>
+        <rdfs:comment>This subentity represents Antoni Tàpies&#39;s art works collected by the Fundació.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Administration -->
+
+    <Class rdf:about="&Ontology1304926436539;Administration">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:comment>This section contains the documents related to administrative tasks.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Agent -->
+
+    <Class rdf:about="&Ontology1304926436539;Agent">
+        <rdfs:comment>This entity represents a person or organization that takes an active role or produces a specified effect.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Architect -->
+
+    <Class rdf:about="&Ontology1304926436539;Architect">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Art_Work -->
+
+    <Class rdf:about="&Ontology1304926436539;Art_Work">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:comment>This subentity represents art works.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Artist -->
+
+    <Class rdf:about="&Ontology1304926436539;Artist">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Audio -->
+
+    <Class rdf:about="&Ontology1304926436539;Audio">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:comment>This entity  describes the audio files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Author -->
+
+    <Class rdf:about="&Ontology1304926436539;Author">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Cartoonist -->
+
+    <Class rdf:about="&Ontology1304926436539;Cartoonist">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Case-Files -->
+
+    <Class rdf:about="&Ontology1304926436539;Case-Files">
+        <rdfs:comment>The administrative documents of the Fundació can be classified by case -files. The classificaton scheme of the Fundació makes possible to identify, classify and organise administrative documents from moment they are created. The sections of the classification scheme are:
+
+1. Administration
+2. Cultural managment
+3. Protection and Promotion of the artistic heritage of Antoni Tàpies
+4. Protection and Promotion of the documentary heritage of the Fundació
+</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Cataloguer -->
+
+    <Class rdf:about="&Ontology1304926436539;Cataloguer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Chair -->
+
+    <Class rdf:about="&Ontology1304926436539;Chair">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#City -->
+
+    <Class rdf:about="&Ontology1304926436539;City">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Close -->
+
+    <Class rdf:about="&Ontology1304926436539;Close">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Collaborator -->
+
+    <Class rdf:about="&Ontology1304926436539;Collaborator">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Colletion -->
+
+    <Class rdf:about="&Ontology1304926436539;Colletion">
+        <rdfs:comment>This entity allows create colletions of Media.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Composer -->
+
+    <Class rdf:about="&Ontology1304926436539;Composer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Consultant -->
+
+    <Class rdf:about="&Ontology1304926436539;Consultant">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Continent -->
+
+    <Class rdf:about="&Ontology1304926436539;Continent">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Country -->
+
+    <Class rdf:about="&Ontology1304926436539;Country">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;cdterms:Location"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Courses -->
+
+    <Class rdf:about="&Ontology1304926436539;Courses">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Critic -->
+
+    <Class rdf:about="&Ontology1304926436539;Critic">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#CulturalManagement -->
+
+    <Class rdf:about="&Ontology1304926436539;CulturalManagement">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:comment>This section contains the documents related to cultural managment.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Curator -->
+
+    <Class rdf:about="&Ontology1304926436539;Curator">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Dancer -->
+
+    <Class rdf:about="&Ontology1304926436539;Dancer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Data -->
+
+    <Class rdf:about="&Ontology1304926436539;Data">
+        <rdfs:comment>Classe genèrica per desar dades que no es coneixen a priori. Per exemple, la informació legal dels documents d&#39;obres introduïts. Aquesta classe inclou un dataproperty &#39;&#39;Name&#39;&#39; que contindrà el nom o etiqueta de la dada i un dataproperty &#39;&#39;Value&#39;&#39; per indicar-ne el contingut o valor.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Department -->
+
+    <Class rdf:about="&Ontology1304926436539;Department">
+        <rdfs:comment>A division of a large organization such as a government, university, business, or shop, dealing with a specific subject, commodity, or area of activity. This entity has to help to define who is the producer of the case-files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Designer -->
+
+    <Class rdf:about="&Ontology1304926436539;Designer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Devoloper -->
+
+    <Class rdf:about="&Ontology1304926436539;Devoloper">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Dinners -->
+
+    <Class rdf:about="&Ontology1304926436539;Dinners">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Editor -->
+
+    <Class rdf:about="&Ontology1304926436539;Editor">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#EducationalDinamycVisit -->
+
+    <Class rdf:about="&Ontology1304926436539;EducationalDinamycVisit">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#EducationalServicesWorkshop -->
+
+    <Class rdf:about="&Ontology1304926436539;EducationalServicesWorkshop">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Event -->
+
+    <Class rdf:about="&Ontology1304926436539;Event">
+        <rdfs:comment>This entity represents an activity (exposition,  workshop, conference, etc.). It also represents the activity and  functioning of the institution  not linked to any specific activity  (advertising of the institution,  administrative documentation, protocol events and actions, external relations, etc).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ExhibitionTourings -->
+
+    <Class rdf:about="&Ontology1304926436539;ExhibitionTourings">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Film-maker -->
+
+    <Class rdf:about="&Ontology1304926436539;Film-maker">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FrameActivity -->
+
+    <Class rdf:about="&Ontology1304926436539;FrameActivity">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:comment>This entity represents and activity framwork (for Example San Sebastián International Film Festival 2010).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FreeAdmissionDays -->
+
+    <Class rdf:about="&Ontology1304926436539;FreeAdmissionDays">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Illustrator -->
+
+    <Class rdf:about="&Ontology1304926436539;Illustrator">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Image -->
+
+    <Class rdf:about="&Ontology1304926436539;Image">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:comment>This entity  describes the image files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#InstallationGuide -->
+
+    <Class rdf:about="&Ontology1304926436539;InstallationGuide">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#InstitutionalAgreement -->
+
+    <Class rdf:about="&Ontology1304926436539;InstitutionalAgreement">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Interviews -->
+
+    <Class rdf:about="&Ontology1304926436539;Interviews">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#KindArtWork -->
+
+    <Class rdf:about="&Ontology1304926436539;KindArtWork">
+        <rdfs:comment>List of different types of  artwork</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Language -->
+
+    <Class rdf:about="&Ontology1304926436539;Language">
+        <rdfs:comment>ISO 639:1988</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Lecturer -->
+
+    <Class rdf:about="&Ontology1304926436539;Lecturer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#LecturesandSeminars -->
+
+    <Class rdf:about="&Ontology1304926436539;LecturesandSeminars">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Material -->
+
+    <Class rdf:about="&Ontology1304926436539;Material">
+        <rdfs:comment>List of different types of  materials.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Media -->
+
+    <Class rdf:about="&Ontology1304926436539;Media">
+        <rdfs:comment>This entity  describes and ranks the different types of digital documents by format.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Member -->
+
+    <Class rdf:about="&Ontology1304926436539;Member">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Musician -->
+
+    <Class rdf:about="&Ontology1304926436539;Musician">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Opening -->
+
+    <Class rdf:about="&Ontology1304926436539;Opening">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#OtherActivities -->
+
+    <Class rdf:about="&Ontology1304926436539;OtherActivities">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Participant -->
+
+    <Class rdf:about="&Ontology1304926436539;Participant">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Performance -->
+
+    <Class rdf:about="&Ontology1304926436539;Performance">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Performer -->
+
+    <Class rdf:about="&Ontology1304926436539;Performer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PhotoInstallationOutsideFat -->
+
+    <Class rdf:about="&Ontology1304926436539;PhotoInstallationOutsideFat">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Photographer -->
+
+    <Class rdf:about="&Ontology1304926436539;Photographer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PhptpInstallationCollectionSpaceA -->
+
+    <Class rdf:about="&Ontology1304926436539;PhptpInstallationCollectionSpaceA">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PhtoInstallation -->
+
+    <Class rdf:about="&Ontology1304926436539;PhtoInstallation">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Poet -->
+
+    <Class rdf:about="&Ontology1304926436539;Poet">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PresentationsorLaunchs -->
+
+    <Class rdf:about="&Ontology1304926436539;PresentationsorLaunchs">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PressKits -->
+
+    <Class rdf:about="&Ontology1304926436539;PressKits">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#PressReleases -->
+
+    <Class rdf:about="&Ontology1304926436539;PressReleases">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Producer -->
+
+    <Class rdf:about="&Ontology1304926436539;Producer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Project_Manager -->
+
+    <Class rdf:about="&Ontology1304926436539;Project_Manager">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ProtectionPromotionAT -->
+
+    <Class rdf:about="&Ontology1304926436539;ProtectionPromotionAT">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:comment>This section contains the documents related to Protection and promotion of the Artistic Heritage of Antoni Tàpies.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ProtectionPromotionFAT -->
+
+    <Class rdf:about="&Ontology1304926436539;ProtectionPromotionFAT">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Case-Files"/>
+        <rdfs:comment>This section contains the documents related to protection and promotion of the documentary heritage of the Fundació.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#ProtocolVisits -->
+
+    <Class rdf:about="&Ontology1304926436539;ProtocolVisits">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Publication -->
+
+    <Class rdf:about="&Ontology1304926436539;Publication">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;SpecialObjects"/>
+        <rdfs:comment>This entity represents a book, journal, a piece of music, etc. or other work for public sale.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Rights -->
+
+    <Class rdf:about="&Ontology1304926436539;Rights">
+        <rdfs:comment>the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Role -->
+
+    <Class rdf:about="&Ontology1304926436539;Role">
+        <rdfs:comment>Defines the list of possible roles played by an Agent. 
+Events, Departments,... can have assigned roles
+Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department, </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Set-upProject -->
+
+    <Class rdf:about="&Ontology1304926436539;Set-upProject">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Show -->
+
+    <Class rdf:about="&Ontology1304926436539;Show">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Software -->
+
+    <Class rdf:about="&Ontology1304926436539;Software">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:comment>This entity  describes the software files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Speaker -->
+
+    <Class rdf:about="&Ontology1304926436539;Speaker">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#SpecialObjects -->
+
+    <Class rdf:about="&Ontology1304926436539;SpecialObjects">
+        <rdfs:comment>This entity represents two objects that, as the Events, have the capacity to generate documentation about themselves. As the Events, this objecte are represented by case-files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#SpecificActivity -->
+
+    <Class rdf:about="&Ontology1304926436539;SpecificActivity">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:comment>This entity represents a specific activity framwork (for Example Donostia Awards 2010).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Sponsor -->
+
+    <Class rdf:about="&Ontology1304926436539;Sponsor">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#SuperActivity -->
+
+    <Class rdf:about="&Ontology1304926436539;SuperActivity">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Event"/>
+        <rdfs:comment>This entity represents a supra-activity (for Example San Sebastián International Film Festival).</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Text -->
+
+    <Class rdf:about="&Ontology1304926436539;Text">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:comment>This entity  describes the text files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Trasnlator -->
+
+    <Class rdf:about="&Ontology1304926436539;Trasnlator">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#TvRadioCinema -->
+
+    <Class rdf:about="&Ontology1304926436539;TvRadioCinema">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Video -->
+
+    <Class rdf:about="&Ontology1304926436539;Video">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Media"/>
+        <rdfs:comment>This entity  describes the video files.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Work -->
+
+    <Class rdf:about="&Ontology1304926436539;Work">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Worker -->
+
+    <Class rdf:about="&Ontology1304926436539;Worker">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Workshop_tutor -->
+
+    <Class rdf:about="&Ontology1304926436539;Workshop_tutor">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#WorkshopdandMeetings -->
+
+    <Class rdf:about="&Ontology1304926436539;WorkshopdandMeetings">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Colletion"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Writer -->
+
+    <Class rdf:about="&Ontology1304926436539;Writer">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#cdterms:Location -->
+
+    <Class rdf:about="&Ontology1304926436539;cdterms:Location">
+        <rdfs:comment>A spatial region or named place.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#dance -->
+
+    <Class rdf:about="&Ontology1304926436539;dance">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:Organisation -->
+
+    <Class rdf:about="&Ontology1304926436539;foaf:Organisation">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Agent"/>
+        <disjointWith rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <rdfs:comment>An organized body of people with a particular purpose (business, society, association, etc) </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#foaf:Person -->
+
+    <Class rdf:about="&Ontology1304926436539;foaf:Person">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Agent"/>
+        <rdfs:comment>A human being regarded as an individual.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#gold -->
+
+    <Class rdf:about="&Ontology1304926436539;gold">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#installation -->
+
+    <Class rdf:about="&Ontology1304926436539;installation">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#iron -->
+
+    <Class rdf:about="&Ontology1304926436539;iron">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#marble -->
+
+    <Class rdf:about="&Ontology1304926436539;marble">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#paste -->
+
+    <Class rdf:about="&Ontology1304926436539;paste">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#performance -->
+
+    <Class rdf:about="&Ontology1304926436539;performance">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#photo -->
+
+    <Class rdf:about="&Ontology1304926436539;photo">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#picture -->
+
+    <Class rdf:about="&Ontology1304926436539;picture">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#publisher -->
+
+    <Class rdf:about="&Ontology1304926436539;publisher">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#requiem -->
+
+    <Class rdf:about="&Ontology1304926436539;requiem">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#sculpture -->
+
+    <Class rdf:about="&Ontology1304926436539;sculpture">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#sonata -->
+
+    <Class rdf:about="&Ontology1304926436539;sonata">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#stone -->
+
+    <Class rdf:about="&Ontology1304926436539;stone">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#tempera -->
+
+    <Class rdf:about="&Ontology1304926436539;tempera">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#titanium -->
+
+    <Class rdf:about="&Ontology1304926436539;titanium">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#videoart -->
+
+    <Class rdf:about="&Ontology1304926436539;videoart">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;KindArtWork"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#wood -->
+
+    <Class rdf:about="&Ontology1304926436539;wood">
+        <rdfs:subClassOf rdf:resource="&Ontology1304926436539;Material"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#Consultor -->
+
+    <NamedIndividual rdf:about="&Ontology1304926436539;Consultor">
+        <rdf:type rdf:resource="&Ontology1304926436539;Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#FAT -->
+
+    <NamedIndividual rdf:about="&Ontology1304926436539;FAT">
+        <rdf:type rdf:resource="&Ontology1304926436539;foaf:Organisation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#jaume -->
+
+    <NamedIndividual rdf:about="&Ontology1304926436539;jaume">
+        <rdf:type rdf:resource="&Ontology1304926436539;Agent"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/4/Ontology1304926436539.owl#jaumet -->
+
+    <NamedIndividual rdf:about="&Ontology1304926436539;jaumet">
+        <rdf:type rdf:resource="&Ontology1304926436539;foaf:Person"/>
+        <Ontology1304926436539:isWorkerOf rdf:resource="&Ontology1304926436539;FAT"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+
