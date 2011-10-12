@@ -181,6 +181,14 @@
     
 
 
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#hasNarrowerTerm -->
+
+    <ObjectProperty rdf:about="&dcterms;hasNarrowerTerm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#hasRepresentation -->
 
     <ObjectProperty rdf:about="&dcterms;hasRepresentation">
@@ -507,7 +515,7 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <ObjectProperty rdf:about="&dcterms;isFriendsoftheFAT">
         <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels Amics de la Fundació (sol·licitud, correspondència, activitats específiques, relacions amb els Amic d&#39;altres institucions, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&dcterms;CulturalManagement"/>
+        <rdfs:range rdf:resource="&dcterms;Administration"/>
         <rdfs:domain rdf:resource="&dcterms;Media"/>
     </ObjectProperty>
     
@@ -855,6 +863,15 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#isTypeDocumentary -->
+
+    <ObjectProperty rdf:about="&dcterms;isTypeDocumentary">
+        <rdfs:range rdf:resource="&dcterms;DocumentaryType"/>
+        <rdfs:domain rdf:resource="&dcterms;Media"/>
+    </ObjectProperty>
+    
+
+
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#isTypeOf -->
 
     <ObjectProperty rdf:about="&dcterms;isTypeOf">
@@ -1000,17 +1017,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#tookPlaceAt -->
-
-    <ObjectProperty rdf:about="&dcterms;tookPlaceAt">
-        <rdfs:comment>This porperty describes the spatial location of an event. Ex. The Eva hesse exhibition took place at the Fundació.</rdfs:comment>
-        <rdfs:domain rdf:resource="&dcterms;Event"/>
-        <rdfs:range rdf:resource="&dcterms;Organisation"/>
-        <inverseOf rdf:resource="&dcterms;witnessed"/>
-    </ObjectProperty>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#tookPlaceOnorWithin -->
 
     <ObjectProperty rdf:about="&dcterms;tookPlaceOnorWithin">
@@ -1045,6 +1051,10 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
         <rdfs:comment>propiedad que representa la supra actividad que posee una actividad marco</rdfs:comment>
+        <rdfs:domain rdf:resource="&dcterms;Case-Files"/>
+        <rdfs:domain rdf:resource="&dcterms;Media"/>
+        <rdfs:domain rdf:resource="&dcterms;SpecialObjects"/>
+        <rdfs:range rdf:resource="&dcterms;Thesaurus"/>
     </ObjectProperty>
     
 
@@ -1284,6 +1294,15 @@ o
     
 
 
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#ConceptThesaurus -->
+
+    <DatatypeProperty rdf:about="&dcterms;ConceptThesaurus">
+        <rdfs:domain rdf:resource="&dcterms;Thesaurus"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Conservation -->
 
     <DatatypeProperty rdf:about="&dcterms;Conservation">
@@ -1516,6 +1535,42 @@ o
     <DatatypeProperty rdf:about="&dcterms;Mute">
         <rdfs:domain rdf:resource="&dcterms;Video"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#NameDocumentaryType -->
+
+    <DatatypeProperty rdf:about="&dcterms;NameDocumentaryType">
+        <rdfs:domain rdf:resource="&dcterms;DocumentaryType"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#NameKindArtWork -->
+
+    <DatatypeProperty rdf:about="&dcterms;NameKindArtWork">
+        <rdfs:domain rdf:resource="&dcterms;KindArtWork"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#NameMaterial -->
+
+    <DatatypeProperty rdf:about="&dcterms;NameMaterial">
+        <rdfs:domain rdf:resource="&dcterms;Material"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#NameRole -->
+
+    <DatatypeProperty rdf:about="&dcterms;NameRole">
+        <rdfs:domain rdf:resource="&dcterms;Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </DatatypeProperty>
     
 
@@ -1792,9 +1847,11 @@ o
     <DatatypeProperty rdf:about="&dcterms;definition">
         <rdfs:comment>an exact statement or description of the nature, scope, or meaning of something.</rdfs:comment>
         <rdfs:domain rdf:resource="&dcterms;Collection"/>
+        <rdfs:domain rdf:resource="&dcterms;DocumentaryType"/>
         <rdfs:domain rdf:resource="&dcterms;KindArtWork"/>
         <rdfs:domain rdf:resource="&dcterms;Material"/>
         <rdfs:domain rdf:resource="&dcterms;Role"/>
+        <rdfs:domain rdf:resource="&dcterms;Thesaurus"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </DatatypeProperty>
     
@@ -1984,14 +2041,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Architect -->
-
-    <Class rdf:about="&dcterms;Architect">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Art_Work -->
 
     <Class rdf:about="&dcterms;Art_Work">
@@ -2001,35 +2050,11 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Artist -->
-
-    <Class rdf:about="&dcterms;Artist">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Audio -->
 
     <Class rdf:about="&dcterms;Audio">
         <rdfs:subClassOf rdf:resource="&dcterms;Media"/>
         <rdfs:comment>This entity  describes the audio files.</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Author -->
-
-    <Class rdf:about="&dcterms;Author">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cartoonist -->
-
-    <Class rdf:about="&dcterms;Cartoonist">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2044,22 +2069,6 @@ o
 2. Cultural managment
 3. Protection and Promotion of the artistic heritage of Antoni Tàpies
 4. Protection and Promotion of the documentary heritage of the Fundació</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cataloguer -->
-
-    <Class rdf:about="&dcterms;Cataloguer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Chair -->
-
-    <Class rdf:about="&dcterms;Chair">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2080,35 +2089,11 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Collaborator -->
-
-    <Class rdf:about="&dcterms;Collaborator">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Collection -->
 
     <Class rdf:about="&dcterms;Collection">
         <rdfs:subClassOf rdf:resource="&dcterms;Root"/>
         <rdfs:comment>This entity allows create Collections of Media.</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Composer -->
-
-    <Class rdf:about="&dcterms;Composer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Consultant -->
-
-    <Class rdf:about="&dcterms;Consultant">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2137,35 +2122,11 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Critic -->
-
-    <Class rdf:about="&dcterms;Critic">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#CulturalManagement -->
 
     <Class rdf:about="&dcterms;CulturalManagement">
         <rdfs:subClassOf rdf:resource="&dcterms;Case-Files"/>
         <rdfs:comment>This section contains the documents related to cultural managment.</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Curator -->
-
-    <Class rdf:about="&dcterms;Curator">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Dancer -->
-
-    <Class rdf:about="&dcterms;Dancer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2179,22 +2140,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Designer -->
-
-    <Class rdf:about="&dcterms;Designer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Devoloper -->
-
-    <Class rdf:about="&dcterms;Devoloper">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Dinners -->
 
     <Class rdf:about="&dcterms;Dinners">
@@ -2203,10 +2148,10 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Editor -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#DocumentaryType -->
 
-    <Class rdf:about="&dcterms;Editor">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
+    <Class rdf:about="&dcterms;DocumentaryType">
+        <rdfs:subClassOf rdf:resource="&dcterms;Root"/>
     </Class>
     
 
@@ -2244,14 +2189,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Film-maker -->
-
-    <Class rdf:about="&dcterms;Film-maker">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#FrameActivity -->
 
     <Class rdf:about="&dcterms;FrameActivity">
@@ -2265,14 +2202,6 @@ o
 
     <Class rdf:about="&dcterms;FreeAdmissionDays">
         <rdfs:subClassOf rdf:resource="&dcterms;Collection"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Illustrator -->
-
-    <Class rdf:about="&dcterms;Illustrator">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2328,14 +2257,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Lecturer -->
-
-    <Class rdf:about="&dcterms;Lecturer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#LecturesandSeminars -->
 
     <Class rdf:about="&dcterms;LecturesandSeminars">
@@ -2380,22 +2301,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Member -->
-
-    <Class rdf:about="&dcterms;Member">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Musician -->
-
-    <Class rdf:about="&dcterms;Musician">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Opening -->
 
     <Class rdf:about="&dcterms;Opening">
@@ -2422,26 +2327,10 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Participant -->
-
-    <Class rdf:about="&dcterms;Participant">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Performance -->
 
     <Class rdf:about="&dcterms;Performance">
         <rdfs:subClassOf rdf:resource="&dcterms;Collection"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Performer -->
-
-    <Class rdf:about="&dcterms;Performer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2479,22 +2368,6 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Photographer -->
-
-    <Class rdf:about="&dcterms;Photographer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Poet -->
-
-    <Class rdf:about="&dcterms;Poet">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#PresentationsorLaunchs -->
 
     <Class rdf:about="&dcterms;PresentationsorLaunchs">
@@ -2515,22 +2388,6 @@ o
 
     <Class rdf:about="&dcterms;PressReleases">
         <rdfs:subClassOf rdf:resource="&dcterms;Collection"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Producer -->
-
-    <Class rdf:about="&dcterms;Producer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Project_Manager -->
-
-    <Class rdf:about="&dcterms;Project_Manager">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2566,14 +2423,6 @@ o
     <Class rdf:about="&dcterms;Publication">
         <rdfs:subClassOf rdf:resource="&dcterms;SpecialObjects"/>
         <rdfs:comment>This entity represents a book, journal, a piece of music, etc. or other work for public sale.</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Publisher -->
-
-    <Class rdf:about="&dcterms;Publisher">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2629,14 +2478,6 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Speaker -->
-
-    <Class rdf:about="&dcterms;Speaker">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#SpecialObjects -->
 
     <Class rdf:about="&dcterms;SpecialObjects">
@@ -2651,14 +2492,6 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     <Class rdf:about="&dcterms;SpecificActivity">
         <rdfs:subClassOf rdf:resource="&dcterms;Event"/>
         <rdfs:comment>This entity represents a specific activity framwork (for Example Donostia Awards 2010).</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Sponsor -->
-
-    <Class rdf:about="&dcterms;Sponsor">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
@@ -2681,10 +2514,10 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Trasnlator -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Thesaurus -->
 
-    <Class rdf:about="&dcterms;Trasnlator">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
+    <Class rdf:about="&dcterms;Thesaurus">
+        <rdfs:subClassOf rdf:resource="&dcterms;Root"/>
     </Class>
     
 
@@ -2714,34 +2547,10 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Worker -->
-
-    <Class rdf:about="&dcterms;Worker">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Workshop_tutor -->
-
-    <Class rdf:about="&dcterms;Workshop_tutor">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
-    </Class>
-    
-
-
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#WorkshopandMeetings -->
 
     <Class rdf:about="&dcterms;WorkshopandMeetings">
         <rdfs:subClassOf rdf:resource="&dcterms;Collection"/>
-    </Class>
-    
-
-
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Writer -->
-
-    <Class rdf:about="&dcterms;Writer">
-        <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
