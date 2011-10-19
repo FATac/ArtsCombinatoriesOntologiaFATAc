@@ -1510,6 +1510,14 @@ o
     
 
 
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Label -->
+
+    <DatatypeProperty rdf:about="&dcterms;Label">
+        <rdfs:domain rdf:resource="&dcterms;Language"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Manuscript -->
 
     <DatatypeProperty rdf:about="&dcterms;Manuscript">
@@ -2041,9 +2049,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Architect_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Architect -->
 
-    <Class rdf:about="&dcterms;Architect_">
+    <Class rdf:about="&dcterms;Architect">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que exerceix l’art de projectar edificis i obres semblants, dreçar-ne els plans i dirigir-ne la construcció. 
 </rdfs:comment>
@@ -2060,9 +2068,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Artist_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Artist -->
 
-    <Class rdf:about="&dcterms;Artist_">
+    <Class rdf:about="&dcterms;Artist">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que practica un art, especialment una de les belles arts.
 </rdfs:comment>
@@ -2079,17 +2087,17 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Author_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Author -->
 
-    <Class rdf:about="&dcterms;Author_">
+    <Class rdf:about="&dcterms;Author">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cartoonist_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cartoonist -->
 
-    <Class rdf:about="&dcterms;Cartoonist_">
+    <Class rdf:about="&dcterms;Cartoonist">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que practica l’art del dibuix.
 </rdfs:comment>
@@ -2111,9 +2119,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cataloguer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Cataloguer -->
 
-    <Class rdf:about="&dcterms;Cataloguer_">
+    <Class rdf:about="&dcterms;Cataloguer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que cataloga.
 </rdfs:comment>
@@ -2121,9 +2129,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Chair_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Chair -->
 
-    <Class rdf:about="&dcterms;Chair_">
+    <Class rdf:about="&dcterms;Chair">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Professor numerari que ocupa en propietat una càtedra d’ensenyament.
 </rdfs:comment>
@@ -2147,9 +2155,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Collaborator_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Collaborator -->
 
-    <Class rdf:about="&dcterms;Collaborator_">
+    <Class rdf:about="&dcterms;Collaborator">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona o institució que col·labora amb una altra o en una activitat. 
 </rdfs:comment>
@@ -2166,9 +2174,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Composer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Composer -->
 
-    <Class rdf:about="&dcterms;Composer_">
+    <Class rdf:about="&dcterms;Composer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que compon obres musicals.
 </rdfs:comment>
@@ -2176,9 +2184,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Consultant_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Consultant -->
 
-    <Class rdf:about="&dcterms;Consultant_">
+    <Class rdf:about="&dcterms;Consultant">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona encarregada de despatxar informes o consultes sobre matèries tècniques.
 </rdfs:comment>
@@ -2210,9 +2218,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Critic_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Critic -->
 
-    <Class rdf:about="&dcterms;Critic_">
+    <Class rdf:about="&dcterms;Critic">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Art de jutjar el valor, les qualitats i els defectes d’una obra literària, artística, etc. 
 </rdfs:comment>
@@ -2229,9 +2237,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Curator_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Curator -->
 
-    <Class rdf:about="&dcterms;Curator_">
+    <Class rdf:about="&dcterms;Curator">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que supervisa o dirigeix l’edició d’una obra, que en té cura. 
 </rdfs:comment>
@@ -2239,9 +2247,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Dancer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Dancer -->
 
-    <Class rdf:about="&dcterms;Dancer_">
+    <Class rdf:about="&dcterms;Dancer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que balla.
 </rdfs:comment>
@@ -2258,9 +2266,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Designer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Designer -->
 
-    <Class rdf:about="&dcterms;Designer_">
+    <Class rdf:about="&dcterms;Designer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que té per ofici dissenyar.
 </rdfs:comment>
@@ -2268,9 +2276,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Devoloper_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Devoloper -->
 
-    <Class rdf:about="&dcterms;Devoloper_">
+    <Class rdf:about="&dcterms;Devoloper">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que fa una programació o escriu o prepara un programa. 
 </rdfs:comment>
@@ -2294,9 +2302,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Editor_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Editor -->
 
-    <Class rdf:about="&dcterms;Editor_">
+    <Class rdf:about="&dcterms;Editor">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que té cura d’una edició. 
 </rdfs:comment>
@@ -2337,9 +2345,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Film-maker_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Film-maker -->
 
-    <Class rdf:about="&dcterms;Film-maker_">
+    <Class rdf:about="&dcterms;Film-maker">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que dirigeix una pel·licula de cinema, un documental, etc.
 </rdfs:comment>
@@ -2364,9 +2372,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Illustrator_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Illustrator -->
 
-    <Class rdf:about="&dcterms;Illustrator_">
+    <Class rdf:about="&dcterms;Illustrator">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que il·lustra, especialment un llibre, un conte, etc.
 </rdfs:comment>
@@ -2425,9 +2433,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Lecturer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Lecturer -->
 
-    <Class rdf:about="&dcterms;Lecturer_">
+    <Class rdf:about="&dcterms;Lecturer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que dóna en públic una conferència.
 </rdfs:comment>
@@ -2479,9 +2487,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Member_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Member -->
 
-    <Class rdf:about="&dcterms;Member_">
+    <Class rdf:about="&dcterms;Member">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que forma part d’una societat, d’una comunitat, etc.
 </rdfs:comment>
@@ -2489,9 +2497,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Musician_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Musician -->
 
-    <Class rdf:about="&dcterms;Musician_">
+    <Class rdf:about="&dcterms;Musician">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que toca en una orquestra, una banda, una cobla, etc.
 
@@ -2526,9 +2534,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Participant_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Participant -->
 
-    <Class rdf:about="&dcterms;Participant_">
+    <Class rdf:about="&dcterms;Participant">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona o organització que participa en un esdeveniment.
 </rdfs:comment>
@@ -2577,9 +2585,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Poet_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Poet -->
 
-    <Class rdf:about="&dcterms;Poet_">
+    <Class rdf:about="&dcterms;Poet">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que fa poesies.
 </rdfs:comment>
@@ -2611,9 +2619,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Producer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Producer -->
 
-    <Class rdf:about="&dcterms;Producer_">
+    <Class rdf:about="&dcterms;Producer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona o organització que produeix alguna cosa (una pel·lícula, un esdeveniment, etc).
 </rdfs:comment>
@@ -2621,9 +2629,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Project_Manager_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Project_Manager -->
 
-    <Class rdf:about="&dcterms;Project_Manager_">
+    <Class rdf:about="&dcterms;Project_Manager">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
@@ -2664,9 +2672,9 @@ o
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Publisher_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Publisher -->
 
-    <Class rdf:about="&dcterms;Publisher_">
+    <Class rdf:about="&dcterms;Publisher">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>
 </rdfs:comment>
@@ -2727,9 +2735,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Speaker_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Speaker -->
 
-    <Class rdf:about="&dcterms;Speaker_">
+    <Class rdf:about="&dcterms;Speaker">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que parla en públic.
 </rdfs:comment>
@@ -2755,9 +2763,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Sponsor_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Sponsor -->
 
-    <Class rdf:about="&dcterms;Sponsor_">
+    <Class rdf:about="&dcterms;Sponsor">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona o institució que patrocina a algú o alguna cosa (un esdeveniment, una pel·lícula, etc)
 </rdfs:comment>
@@ -2791,9 +2799,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Trasnlator_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Trasnlator -->
 
-    <Class rdf:about="&dcterms;Trasnlator_">
+    <Class rdf:about="&dcterms;Trasnlator">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que tradueix. 
 </rdfs:comment>
@@ -2826,9 +2834,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Worker_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Worker -->
 
-    <Class rdf:about="&dcterms;Worker_">
+    <Class rdf:about="&dcterms;Worker">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que treballa en qualitat d’assalariat.
 </rdfs:comment>
@@ -2836,9 +2844,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Workshop_tutor_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Workshop_tutor -->
 
-    <Class rdf:about="&dcterms;Workshop_tutor_">
+    <Class rdf:about="&dcterms;Workshop_tutor">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
     </Class>
     
@@ -2852,9 +2860,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Writer_ -->
+    <!-- http://www.fundaciotapies.org/ontologies/2011/4/ac.owl#Writer -->
 
-    <Class rdf:about="&dcterms;Writer_">
+    <Class rdf:about="&dcterms;Writer">
         <rdfs:subClassOf rdf:resource="&dcterms;Role"/>
         <rdfs:comment>Persona que escriu llibres, que es dedica a la composició literària.
 </rdfs:comment>
