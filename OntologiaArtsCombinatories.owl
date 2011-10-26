@@ -2050,7 +2050,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Agent -->
 
     <owl:Class rdf:about="&ac;Agent">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This entity represents a person or organization that takes an active role or produces a specified effect.</rdfs:comment>
     </owl:Class>
     
@@ -2115,7 +2114,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Case-File -->
 
     <owl:Class rdf:about="&ac;Case-File">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>The administrative documents of the Fundació can be classified by case -files. The classificaton scheme of the Fundació makes possible to identify, classify and organise administrative documents from moment they are created. The sections of the classification scheme are:
 
 1. Administration
@@ -2175,7 +2173,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Collection -->
 
     <owl:Class rdf:about="&ac;Collection">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This entity allows create Collections of Media.</rdfs:comment>
     </owl:Class>
     
@@ -2267,7 +2264,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Department -->
 
     <owl:Class rdf:about="&ac;Department">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>A division of a large organization such as a government, university, business, or shop, dealing with a specific subject, commodity, or area of activity. This entity has to help to define who is the producer of the case-files.</rdfs:comment>
     </owl:Class>
     
@@ -2303,9 +2299,7 @@ o
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#DocumentaryType -->
 
-    <owl:Class rdf:about="&ac;DocumentaryType">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
-    </owl:Class>
+    <owl:Class rdf:about="&ac;DocumentaryType"/>
     
 
 
@@ -2338,7 +2332,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Event -->
 
     <owl:Class rdf:about="&ac;Event">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This entity represents an activity (exposition,  workshop, conference, etc.). It also represents the activity and  functioning of the institution  not linked to any specific activity  (advertising of the institution,  administrative documentation, protocol events and actions, external relations, etc).</rdfs:comment>
     </owl:Class>
     
@@ -2425,7 +2418,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#KindArtWork -->
 
     <owl:Class rdf:about="&ac;KindArtWork">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>List of different types of  artwork</rdfs:comment>
     </owl:Class>
     
@@ -2434,7 +2426,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Language -->
 
     <owl:Class rdf:about="&ac;Language">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>ISO 639:1988</rdfs:comment>
     </owl:Class>
     
@@ -2461,7 +2452,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Lending -->
 
     <owl:Class rdf:about="&ac;Lending">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This class will store data for own work lendings to foreign organizations</rdfs:comment>
     </owl:Class>
     
@@ -2470,7 +2460,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Location -->
 
     <owl:Class rdf:about="&ac;Location">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>A spatial region or named place.</rdfs:comment>
     </owl:Class>
     
@@ -2479,7 +2468,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Material -->
 
     <owl:Class rdf:about="&ac;Material">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>List of different types of  materials.</rdfs:comment>
     </owl:Class>
     
@@ -2488,7 +2476,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Media -->
 
     <owl:Class rdf:about="&ac;Media">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This entity  describes and ranks the different types of digital documents by format.</rdfs:comment>
     </owl:Class>
     
@@ -2692,7 +2679,6 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Right -->
 
     <owl:Class rdf:about="&ac;Right">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.</rdfs:comment>
     </owl:Class>
     
@@ -2701,19 +2687,12 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Role -->
 
     <owl:Class rdf:about="&ac;Role">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>Persona que ha fet o ha compost una obra intel·lectual, una obra d’art.
 </rdfs:comment>
         <rdfs:comment>Defines the list of possible roles played by an Agent. 
 Events, Departments,... can have assigned roles
 Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Root -->
-
-    <owl:Class rdf:about="&ac;Root"/>
     
 
 
@@ -2755,7 +2734,6 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#SpecialObject -->
 
     <owl:Class rdf:about="&ac;SpecialObject">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
         <rdfs:comment>This entity represents two objects that, as the Events, have the capacity to generate documentation about themselves. As the Events, this objecte are represented by case-files.</rdfs:comment>
     </owl:Class>
     
@@ -2800,9 +2778,7 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Thesaurus -->
 
-    <owl:Class rdf:about="&ac;Thesaurus">
-        <rdfs:subClassOf rdf:resource="&ac;Root"/>
-    </owl:Class>
+    <owl:Class rdf:about="&ac;Thesaurus"/>
     
 
 
