@@ -7,6 +7,7 @@
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ac2 "http://stress:8080/ArtsCombinatoriesRest/ontology/ac#" >
     <!ENTITY ac "http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#" >
 ]>
 
@@ -14,6 +15,7 @@
 <rdf:RDF xmlns="http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#"
      xml:base="http://localhost:8080/ArtsCombinatoriesRest/ontology/ac"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ac2="http://stress:8080/ArtsCombinatoriesRest/ontology/ac#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -65,7 +67,6 @@
     <owl:ObjectProperty rdf:about="&ac;IsLocatedIn">
         <rdfs:range rdf:resource="&ac;Location"/>
         <rdfs:domain rdf:resource="&ac;Location"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -131,6 +132,14 @@
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#containedBy -->
+
+    <owl:ObjectProperty rdf:about="&ac;containedBy">
+        <owl:inverseOf rdf:resource="&ac;hasMedia"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#continuesTo -->
 
     <owl:ObjectProperty rdf:about="&ac;continuesTo">
@@ -177,7 +186,6 @@
         <rdfs:range rdf:resource="&ac;Language"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
         <rdfs:domain rdf:resource="&ac;SpecialObject"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -193,9 +201,7 @@
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasNarrowerTerm -->
 
-    <owl:ObjectProperty rdf:about="&ac;hasNarrowerTerm">
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&ac;hasNarrowerTerm"/>
     
 
 
@@ -207,7 +213,6 @@
         <rdfs:domain rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;Image"/>
         <rdfs:domain rdf:resource="&ac;Publication"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -215,7 +220,6 @@
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasSpecificActivity -->
 
     <owl:ObjectProperty rdf:about="&ac;hasSpecificActivity">
-        <rdfs:comment>propiedad que representa las actividades específicas de una actividad marco, o una actividad específica que es subactividad de otra específica.</rdfs:comment>
         <rdfs:domain rdf:resource="&ac;FrameActivity"/>
         <rdfs:domain rdf:resource="&ac;SpecificActivity"/>
         <rdfs:range rdf:resource="&ac;SpecificActivity"/>
@@ -228,7 +232,6 @@
     <owl:ObjectProperty rdf:about="&ac;hasSuperActivity">
         <rdfs:domain rdf:resource="&ac;FrameActivity"/>
         <owl:inverseOf rdf:resource="&ac;superActivityOf"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -245,7 +248,6 @@
         <rdfs:domain rdf:resource="&ac;Text"/>
         <rdfs:range rdf:resource="&ac;Video"/>
         <rdfs:domain rdf:resource="&ac;Video"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -269,7 +271,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;Media"/>
         <rdfs:range rdf:resource="&ac;SpecialObject"/>
         <rdfs:domain rdf:resource="&ac;SpecialObject"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -441,7 +442,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;CulturalManagement"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
         <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -502,7 +502,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</rdfs:comment>
         <rdfs:range rdf:resource="&ac;Administration"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -603,7 +602,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:domain rdf:resource="&ac;Language"/>
         <rdfs:range rdf:resource="&ac;Media"/>
         <rdfs:range rdf:resource="&ac;SpecialObject"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -717,7 +715,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;Administration"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -914,7 +911,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;Organisation"/>
         <rdfs:domain rdf:resource="&ac;Person"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -980,7 +976,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <owl:ObjectProperty rdf:about="&ac;possesses">
         <rdfs:domain rdf:resource="&ac;Agent"/>
         <rdfs:range rdf:resource="&ac;Art_Work"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -992,6 +987,14 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:domain rdf:resource="&ac;Case-File"/>
         <rdfs:range rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;SpecialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#representedBy -->
+
+    <owl:ObjectProperty rdf:about="&ac;representedBy">
+        <owl:inverseOf rdf:resource="&ac;represents"/>
     </owl:ObjectProperty>
     
 
@@ -1040,7 +1043,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:domain rdf:resource="&ac;Department"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;Organisation"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -1170,7 +1172,7 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <owl:DatatypeProperty rdf:about="&ac;Bio">
         <rdfs:domain rdf:resource="&ac;Agent"/>
-        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -1444,6 +1446,7 @@ o
     <owl:DatatypeProperty rdf:about="&ac;FatacId">
         <rdfs:comment>Número identificador únic de tots els objectes de l&#39;ontologia.</rdfs:comment>
         <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </owl:DatatypeProperty>
     
 
