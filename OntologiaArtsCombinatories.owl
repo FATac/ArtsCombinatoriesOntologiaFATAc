@@ -74,6 +74,10 @@
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#applicationOf -->
 
     <owl:ObjectProperty rdf:about="&ac;applicationOf">
+        <rdfs:domain rdf:resource="&ac;Case-File"/>
+        <rdfs:domain rdf:resource="&ac;Event"/>
+        <rdfs:domain rdf:resource="&ac;Media"/>
+        <rdfs:domain rdf:resource="&ac;SpecialObject"/>
         <owl:inverseOf rdf:resource="&ac;appliesOn"/>
     </owl:ObjectProperty>
     
@@ -957,6 +961,15 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:domain rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;Organisation"/>
         <owl:inverseOf rdf:resource="&ac;wasDestinationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#performedBy -->
+
+    <owl:ObjectProperty rdf:about="&ac;performedBy">
+        <rdfs:domain rdf:resource="&ac;Role"/>
+        <owl:inverseOf rdf:resource="&ac;performsRole"/>
     </owl:ObjectProperty>
     
 
