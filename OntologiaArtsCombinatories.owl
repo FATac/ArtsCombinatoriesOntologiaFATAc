@@ -1584,7 +1584,10 @@ o
     <owl:DatatypeProperty rdf:about="&ac;Name">
         <rdfs:domain rdf:resource="&ac;Agent"/>
         <rdfs:domain rdf:resource="&ac;Department"/>
+        <rdfs:domain rdf:resource="&ac;KindArtWork"/>
         <rdfs:domain rdf:resource="&ac;Location"/>
+        <rdfs:domain rdf:resource="&ac;Material"/>
+        <rdfs:domain rdf:resource="&ac;Role"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -1595,33 +1598,6 @@ o
     <owl:DatatypeProperty rdf:about="&ac;NameDocumentaryType">
         <rdfs:domain rdf:resource="&ac;DocumentaryType"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#NameKindArtWork -->
-
-    <owl:DatatypeProperty rdf:about="&ac;NameKindArtWork">
-        <rdfs:domain rdf:resource="&ac;KindArtWork"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#NameMaterial -->
-
-    <owl:DatatypeProperty rdf:about="&ac;NameMaterial">
-        <rdfs:domain rdf:resource="&ac;Material"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#NameRole -->
-
-    <owl:DatatypeProperty rdf:about="&ac;NameRole">
-        <rdfs:domain rdf:resource="&ac;Role"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
     </owl:DatatypeProperty>
     
 
