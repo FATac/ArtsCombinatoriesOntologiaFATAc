@@ -307,12 +307,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isAuthoredBy -->
-
-    <owl:ObjectProperty rdf:about="&ac;isAuthoredBy"/>
-    
-
-
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isAuthors -->
 
     <owl:ObjectProperty rdf:about="&ac;isAuthors">
@@ -495,16 +489,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</rdfs:comment>
         <rdfs:range rdf:resource="&ac;Administration"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isFilmedBy -->
-
-    <owl:ObjectProperty rdf:about="&ac;isFilmedBy">
-        <rdfs:range rdf:resource="&ac;Agent"/>
-        <rdfs:domain rdf:resource="&ac;Art_Work"/>
-        <rdfs:domain rdf:resource="&ac;Video"/>
     </owl:ObjectProperty>
     
 
@@ -773,17 +757,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;CulturalManagement"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
         <rdfs:domain rdf:resource="&ac;Publication"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPublished -->
-
-    <owl:ObjectProperty rdf:about="&ac;isPublished">
-        <rdfs:comment>Aquesta relació permet definir el rol que ha tingut una persona o organització (grups d&#39;artistes) en relació a un esdeveniment, una obra d&#39;art, una publicació o un media.</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Agent"/>
-        <rdfs:range rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;SpecialObject"/>
     </owl:ObjectProperty>
     
 
@@ -1058,12 +1031,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#wasOriginOf -->
 
     <owl:ObjectProperty rdf:about="&ac;wasOriginOf"/>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#witnessed -->
-
-    <owl:ObjectProperty rdf:about="&ac;witnessed"/>
     
 
 
