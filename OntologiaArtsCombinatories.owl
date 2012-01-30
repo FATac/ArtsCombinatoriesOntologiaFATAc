@@ -183,6 +183,14 @@
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasLicense -->
+
+    <owl:ObjectProperty rdf:about="&ac;hasLicense">
+        <rdfs:range rdf:resource="&ac;License"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasMedia -->
 
     <owl:ObjectProperty rdf:about="&ac;hasMedia">
@@ -195,6 +203,17 @@
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasNarrowerTerm -->
 
     <owl:ObjectProperty rdf:about="&ac;hasNarrowerTerm"/>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasObjectCollected -->
+
+    <owl:ObjectProperty rdf:about="&ac;hasObjectCollected">
+        <rdfs:domain rdf:resource="&ac;Collection"/>
+        <rdfs:range rdf:resource="&ac;Media"/>
+        <rdfs:range rdf:resource="&ac;SpecialObject"/>
+        <owl:inverseOf rdf:resource="&ac;isCollectedIn"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1472,8 +1491,8 @@ o
     <owl:DatatypeProperty rdf:about="&ac;Homepage">
         <rdfs:domain rdf:resource="&ac;Agent"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
+        <rdfs:domain rdf:resource="&ac;License"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:domain rdf:resource="&ac;Right"/>
         <rdfs:domain rdf:resource="&ac;SpecialObject"/>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
     </owl:DatatypeProperty>
@@ -2461,6 +2480,14 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#License -->
+
+    <owl:Class rdf:about="&ac;License">
+        <rdfs:comment>the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Location -->
 
     <owl:Class rdf:about="&ac;Location">
@@ -2704,14 +2731,6 @@ o
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Right -->
-
-    <owl:Class rdf:about="&ac;Right">
-        <rdfs:comment>the exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Role -->
 
     <owl:Class rdf:about="&ac;Role">
@@ -2818,9 +2837,9 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Trasnlator -->
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Translator -->
 
-    <owl:Class rdf:about="&ac;Trasnlator">
+    <owl:Class rdf:about="&ac;Translator">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
         <rdfs:comment>Persona que tradueix. 
 </rdfs:comment>
