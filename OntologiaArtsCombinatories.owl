@@ -217,6 +217,14 @@
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasPublication -->
+
+    <owl:ObjectProperty rdf:about="&ac;hasPublication">
+        <owl:inverseOf rdf:resource="&ac;isPublicationoftheEvent"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasRepresentation -->
 
     <owl:ObjectProperty rdf:about="&ac;hasRepresentation">
@@ -873,6 +881,7 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isTypeOf -->
 
     <owl:ObjectProperty rdf:about="&ac;isTypeOf">
+        <rdfs:domain rdf:resource="&ac;KindArtWork"/>
         <owl:inverseOf rdf:resource="&ac;hasType"/>
     </owl:ObjectProperty>
     
@@ -1006,6 +1015,7 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#specificActivityOf -->
 
     <owl:ObjectProperty rdf:about="&ac;specificActivityOf">
+        <rdfs:domain rdf:resource="&ac;SpecificActivity"/>
         <owl:inverseOf rdf:resource="&ac;hasSpecificActivity"/>
     </owl:ObjectProperty>
     
@@ -1013,7 +1023,9 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#superActivityOf -->
 
-    <owl:ObjectProperty rdf:about="&ac;superActivityOf"/>
+    <owl:ObjectProperty rdf:about="&ac;superActivityOf">
+        <rdfs:domain rdf:resource="&ac;SuperActivity"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1043,13 +1055,17 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#wasDestinationOf -->
 
-    <owl:ObjectProperty rdf:about="&ac;wasDestinationOf"/>
+    <owl:ObjectProperty rdf:about="&ac;wasDestinationOf">
+        <rdfs:domain rdf:resource="&ac;Organisation"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#wasOriginOf -->
 
-    <owl:ObjectProperty rdf:about="&ac;wasOriginOf"/>
+    <owl:ObjectProperty rdf:about="&ac;wasOriginOf">
+        <rdfs:domain rdf:resource="&ac;Organisation"/>
+    </owl:ObjectProperty>
     
 
 
