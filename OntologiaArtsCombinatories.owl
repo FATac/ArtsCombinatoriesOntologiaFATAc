@@ -117,6 +117,15 @@
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#categoryApplies -->
+
+    <owl:ObjectProperty rdf:about="&ac;categoryApplies">
+        <rdfs:range rdf:resource="&ac;Case-File"/>
+        <rdfs:domain rdf:resource="&ac;Sub_Case-file"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#comesFrom -->
 
     <owl:ObjectProperty rdf:about="&ac;comesFrom">
@@ -220,7 +229,8 @@
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasPublication -->
 
     <owl:ObjectProperty rdf:about="&ac;hasPublication">
-        <owl:inverseOf rdf:resource="&ac;isPublicationoftheEvent"/>
+        <rdfs:domain rdf:resource="&ac;Case-File"/>
+        <rdfs:domain rdf:resource="&ac;Event"/>
     </owl:ObjectProperty>
     
 
@@ -243,6 +253,16 @@
         <rdfs:domain rdf:resource="&ac;FrameActivity"/>
         <rdfs:domain rdf:resource="&ac;SpecificActivity"/>
         <rdfs:range rdf:resource="&ac;SpecificActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasSubcasefile -->
+
+    <owl:ObjectProperty rdf:about="&ac;hasSubcasefile">
+        <rdfs:domain rdf:resource="&ac;Case-File"/>
+        <rdfs:range rdf:resource="&ac;Sub_Case-file"/>
+        <owl:inverseOf rdf:resource="&ac;categoryApplies"/>
     </owl:ObjectProperty>
     
 
@@ -304,56 +324,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isAdministrativeOrganisation -->
-
-    <owl:ObjectProperty rdf:about="&ac;isAdministrativeOrganisation">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió administrativa de l&#39;entitat (Polítiques i procediments, circulars, organigrames, llocs de treball, gestió dels recursos humans, del patrimoni, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isArchiveServices -->
-
-    <owl:ObjectProperty rdf:about="&ac;isArchiveServices">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels serveis l&#39;Arxiu (Préstec, reprografia, consulta, difusió, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isAssetManagment -->
-
-    <owl:ObjectProperty rdf:about="&ac;isAssetManagment">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del patrimoni de l&#39;entitat (operacions de béns mobles, inventari de béns mobles, utilització de béns mobles, utilització de béns inmobñes, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isAuthors -->
-
-    <owl:ObjectProperty rdf:about="&ac;isAuthors">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als autors que participen en una activitat (Event) (cartes, permisos, negociacions amb els autors que tan poden ser artistes, conferenciants, escriptors, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isBookshopServices -->
-
-    <owl:ObjectProperty rdf:about="&ac;isBookshopServices">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la llibreria (inventaris, productes, correspondència, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCase-Fileproducer -->
 
     <owl:ObjectProperty rdf:about="&ac;isCase-Fileproducer">
@@ -361,56 +331,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:domain rdf:resource="&ac;Agent"/>
         <rdfs:range rdf:resource="&ac;Case-File"/>
         <rdfs:domain rdf:resource="&ac;Department"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCataloguingOriginalWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCataloguingOriginalWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra original d&#39;Antoni Tàpies (catàleg d&#39;obra original, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCataloguingoftheGraphicWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCataloguingoftheGraphicWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra gràfica d&#39;Antoni Tàpies (catàleg d&#39;obra gràfica, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCertificationofOriginalWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCertificationofOriginalWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra original d&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCertificationoftheGraphicWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCertificationoftheGraphicWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra gràfica de l&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCirculationSheet -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCirculationSheet">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al full de préstec de les obres d&#39;art d&#39;un esdeveniment)  (fulls de prèstec, correspondència amb els prestadors, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
     </owl:ObjectProperty>
     
 
@@ -439,163 +359,12 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isComunicationostheEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isComunicationostheEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la comunicació d&#39;un esdeveniment (notes de premsa, gestió de la publicitat, elements de difusió, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isConditionReport -->
-
-    <owl:ObjectProperty rdf:about="&ac;isConditionReport">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all informes de condicions de les obres d&#39;art d&#39;un esdeveniment (informes de condició, fotografia de les onbres, correspondència amb restauradors, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isConservationandRestoration -->
-
-    <owl:ObjectProperty rdf:about="&ac;isConservationandRestoration">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;estat de conservació i restauració de l&#39;expedient d&#39;una obra de la col·lecció de la Fundació  (informes de restauració in de conservació, fotografies, etc).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isCopyrightProtection -->
-
-    <owl:ObjectProperty rdf:about="&ac;isCopyrightProtection">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la protecció de drets d&#39;autor de l&#39;obra de l&#39;Antoni Tàpies (permisos de reproducció de l&#39;obra, sol·licituds, gesions amb VEGAP, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isDescriptionandCondition -->
-
-    <owl:ObjectProperty rdf:about="&ac;isDescriptionandCondition">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres de la col·lecció de la Fundació i a la catalogació de les obres de l&#39;Antoni Tàpies  (informes de condició, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isDescriptionofConditionEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isDescriptionofConditionEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres d&#39;un esdeveniment  (informes de condició, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isEducationalServices -->
-
-    <owl:ObjectProperty rdf:about="&ac;isEducationalServices">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Servei educatiu (visites guiades, organització d&#39;activitats, tallers, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Case-File"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isExternalRelations -->
-
-    <owl:ObjectProperty rdf:about="&ac;isExternalRelations">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isFinancialResorceManagment -->
-
-    <owl:ObjectProperty rdf:about="&ac;isFinancialResorceManagment">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos financers de l&#39;entitat (pressupostos, gestió d&#39;ingressos i de despeses, anàlisis i conciliacions de comptes, impostos i obligacions fiscals, contractació administrativa, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isFriendsoftheFAT -->
-
-    <owl:ObjectProperty rdf:about="&ac;isFriendsoftheFAT">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels Amics de la Fundació (sol·licitud, correspondència, activitats específiques, relacions amb els Amic d&#39;altres institucions, etc).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isFundacioLogo -->
-
-    <owl:ObjectProperty rdf:about="&ac;isFundacioLogo">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Logo de l&#39;entitat (imatges i aplicacions, imatge corporatiova).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isHistoryofFAT -->
-
-    <owl:ObjectProperty rdf:about="&ac;isHistoryofFAT">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la Història de la Fundació.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isHumanResorces -->
-
-    <owl:ObjectProperty rdf:about="&ac;isHumanResorces">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos humans de l&#39;entitat (Accés, selecció i provisió, expedientb de personal, relacions laborarls, formació i moviments de personal).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isIncorporatedIn -->
 
     <owl:ObjectProperty rdf:about="&ac;isIncorporatedIn">
         <rdfs:range rdf:resource="&ac;Art_Work"/>
         <rdfs:domain rdf:resource="&ac;Material"/>
         <owl:inverseOf rdf:resource="&ac;consistOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isInstallationGuide -->
-
-    <owl:ObjectProperty rdf:about="&ac;isInstallationGuide">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isInterventionReport -->
-
-    <owl:ObjectProperty rdf:about="&ac;isInterventionReport">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la intervenció d&#39;una obra d&#39;art de la col·lecció de la Fundació.</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
     </owl:ObjectProperty>
     
 
@@ -610,42 +379,11 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isLegalProceeding -->
-
-    <owl:ObjectProperty rdf:about="&ac;isLegalProceeding">
-        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Image"/>
-        <rdfs:domain rdf:resource="&ac;Text"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isLegislationandLegalMatters -->
-
-    <owl:ObjectProperty rdf:about="&ac;isLegislationandLegalMatters">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als assumptes jurídics de l&#39;entitat (legislació pròpia de les fundacions, lesgislació general, acords i convenis, litigis, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isLendedTo -->
 
     <owl:ObjectProperty rdf:about="&ac;isLendedTo">
         <rdfs:range rdf:resource="&ac;Agent"/>
         <rdfs:domain rdf:resource="&ac;Lending"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isLibraryServices -->
-
-    <owl:ObjectProperty rdf:about="&ac;isLibraryServices">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la Biblioteca (préstec intern, reprografia, consulta, difusió, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
     </owl:ObjectProperty>
     
 
@@ -666,26 +404,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:comment>Lloc geogràfic d&#39;una organització.</rdfs:comment>
         <rdfs:range rdf:resource="&ac;Location"/>
         <rdfs:domain rdf:resource="&ac;Organisation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isManagmentofFAT -->
-
-    <owl:ObjectProperty rdf:about="&ac;isManagmentofFAT">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió a la direcció de l&#39;entitat (òrgans rectors, sessions de junta del patronat, memòria d&#39;activitats, membres del patronat, documents estratègics, avaluacions de direcció, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isOrganisationoftheEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isOrganisationoftheEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;organització d&#39;un esdeveniment.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
     </owl:ObjectProperty>
     
 
@@ -712,88 +430,11 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPressandMediaClipping -->
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPublicationOf -->
 
-    <owl:ObjectProperty rdf:about="&ac;isPressandMediaClipping">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als reculls de premsa i comunicació referents a la Fundació (no als esdeveniments que organitza).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Event"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPresskitsandPressReleases -->
-
-    <owl:ObjectProperty rdf:about="&ac;isPresskitsandPressReleases">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als dossiers i notes de premsa de la Fundació (no als esdeveniments que organitza).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isProductioniftheEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isProductioniftheEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la producció d&#39;un esdeveniment.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPromotionandInformationoboutFAT -->
-
-    <owl:ObjectProperty rdf:about="&ac;isPromotionandInformationoboutFAT">
-        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa promoció i difusió de l&#39;entitat.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Event"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isProtocolEventsActions -->
-
-    <owl:ObjectProperty rdf:about="&ac;isProtocolEventsActions">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa als actes i atencions protocolàries (commemoracions, discursos, presentacions, escrits corporatius, visites i viatges, felicitacions, agraïments i condols, etc.)</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Event"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPublicationManagment -->
-
-    <owl:ObjectProperty rdf:about="&ac;isPublicationManagment">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions, tan de la Fundació com de l&#39;obra i figura d&#39;Antoni Tàpies (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
+    <owl:ObjectProperty rdf:about="&ac;isPublicationOf">
+        <rdfs:range rdf:resource="&ac;Event"/>
         <rdfs:domain rdf:resource="&ac;Publication"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isPublicationoftheEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isPublicationoftheEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions relatives als esdevenimets que la Fundació organitza (edició i producció, preparació i correció dels originals, disseny, impressió i distribució i venda, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:domain rdf:resource="&ac;Publication"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isRecordoftheWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isRecordoftheWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la fitxa d&#39;una obra de la Col·lecció.</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
     </owl:ObjectProperty>
     
 
@@ -802,16 +443,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
 
     <owl:ObjectProperty rdf:about="&ac;isReferencedBy">
         <owl:inverseOf rdf:resource="&ac;references"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isRegistrationoftheWork -->
-
-    <owl:ObjectProperty rdf:about="&ac;isRegistrationoftheWork">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa al registre d&#39;una obra de la Col·lecció.</rdfs:comment>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
     </owl:ObjectProperty>
     
 
@@ -828,43 +459,11 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     
 
 
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isResearchAT -->
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isSubcasefileCategory -->
 
-    <owl:ObjectProperty rdf:about="&ac;isResearchAT">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a les investigacions que la Fundació porta a terme sobre l&#39;obra i la vida de l&#39;Antoni Tàpies.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="&ac;isSubcasefileCategory">
         <rdfs:domain rdf:resource="&ac;Media"/>
-        <rdfs:range rdf:resource="&ac;ProtectionPromotionAT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isSpaceandSet-Up -->
-
-    <owl:ObjectProperty rdf:about="&ac;isSpaceandSet-Up">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;espai i muntatge d&#39;un esdeveniment (plànols, cartel·les, disseny d&#39;espis, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isStatusandRules -->
-
-    <owl:ObjectProperty rdf:about="&ac;isStatusandRules">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa all estatuts i reglamets de l&#39;entitat i les seves respectives modificacions.</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;Administration"/>
-        <rdfs:domain rdf:resource="&ac;Image"/>
-        <rdfs:domain rdf:resource="&ac;Text"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isTouringEvent -->
-
-    <owl:ObjectProperty rdf:about="&ac;isTouringEvent">
-        <rdfs:comment>Aquesta relació permet reuní tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
+        <rdfs:range rdf:resource="&ac;Sub_Case-file"/>
     </owl:ObjectProperty>
     
 
@@ -905,16 +504,6 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
         <rdfs:range rdf:resource="&ac;Event"/>
         <rdfs:range rdf:resource="&ac;Organisation"/>
         <rdfs:domain rdf:resource="&ac;Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#isWorks -->
-
-    <owl:ObjectProperty rdf:about="&ac;isWorks">
-        <rdfs:domain rdf:resource="&ac;Art_Work"/>
-        <rdfs:range rdf:resource="&ac;CulturalManagement"/>
-        <rdfs:domain rdf:resource="&ac;Media"/>
     </owl:ObjectProperty>
     
 
@@ -1017,6 +606,16 @@ Ex. Una obra d&#39;art concreta és un quadre, una escultura, un performance, et
     <owl:ObjectProperty rdf:about="&ac;specificActivityOf">
         <rdfs:domain rdf:resource="&ac;SpecificActivity"/>
         <owl:inverseOf rdf:resource="&ac;hasSpecificActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#subcasefileCategoryInv -->
+
+    <owl:ObjectProperty rdf:about="&ac;subcasefileCategoryInv">
+        <rdfs:range rdf:resource="&ac;Media"/>
+        <rdfs:domain rdf:resource="&ac;Sub_Case-file"/>
+        <owl:inverseOf rdf:resource="&ac;isSubcasefileCategory"/>
     </owl:ObjectProperty>
     
 
@@ -1392,6 +991,7 @@ o
         <rdfs:domain rdf:resource="&ac;Agent"/>
         <rdfs:domain rdf:resource="&ac;Case-File"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
+        <rdfs:domain rdf:resource="&ac;License"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
         <rdfs:domain rdf:resource="&ac;SpecialObject"/>
         <rdfs:range rdf:resource="&xsd;string"/>
@@ -1769,6 +1369,7 @@ o
     <owl:DatatypeProperty rdf:about="&ac;Title">
         <rdfs:domain rdf:resource="&ac;Collection"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
+        <rdfs:domain rdf:resource="&ac;License"/>
         <rdfs:domain rdf:resource="&ac;Media"/>
         <rdfs:domain rdf:resource="&ac;SpecialObject"/>
         <rdfs:range rdf:resource="&xsd;string"/>
@@ -2030,6 +1631,15 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Administrative_Organisation -->
+
+    <owl:Class rdf:about="&ac;Administrative_Organisation">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió administrativa de l&#39;entitat (Polítiques i procediments, circulars, organigrames, llocs de treball, gestió dels recursos humans, del patrimoni, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Agent -->
 
     <owl:Class rdf:about="&ac;Agent">
@@ -2044,6 +1654,15 @@ o
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
         <rdfs:comment>Persona que exerceix l’art de projectar edificis i obres semblants, dreçar-ne els plans i dirigir-ne la construcció. 
 </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Archive_Services -->
+
+    <owl:Class rdf:about="&ac;Archive_Services">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels serveis l&#39;Arxiu (Préstec, reprografia, consulta, difusió, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2075,6 +1694,15 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Asset_Managment -->
+
+    <owl:Class rdf:about="&ac;Asset_Managment">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del patrimoni de l&#39;entitat (operacions de béns mobles, inventari de béns mobles, utilització de béns mobles, utilització de béns inmobñes, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Audio -->
 
     <owl:Class rdf:about="&ac;Audio">
@@ -2096,6 +1724,24 @@ o
 
     <owl:Class rdf:about="&ac;Author">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Authors -->
+
+    <owl:Class rdf:about="&ac;Authors">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als autors que participen en una activitat (Event) (cartes, permisos, negociacions amb els autors que tan poden ser artistes, conferenciants, escriptors, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Bookshop_Services -->
+
+    <owl:Class rdf:about="&ac;Bookshop_Services">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la llibreria (inventaris, productes, correspondència, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2133,6 +1779,42 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Cataloguing_Graphic_Work -->
+
+    <owl:Class rdf:about="&ac;Cataloguing_Graphic_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra gràfica d&#39;Antoni Tàpies (catàleg d&#39;obra gràfica, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Cataloguing_Original_Work -->
+
+    <owl:Class rdf:about="&ac;Cataloguing_Original_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la catalogació d&#39;obra original d&#39;Antoni Tàpies (catàleg d&#39;obra original, expedient de catalogació, registre, informe de condicions, itineràncies, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Certification_Graphic_Work -->
+
+    <owl:Class rdf:about="&ac;Certification_Graphic_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra gràfica de l&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Certification_Original_Work -->
+
+    <owl:Class rdf:about="&ac;Certification_Original_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la certificació de l&#39;obra original d&#39;Antoni Tàpies (sol·licitud, fotografia de l&#39;obra, certificat, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Chair -->
 
     <owl:Class rdf:about="&ac;Chair">
@@ -2147,6 +1829,15 @@ o
 
     <owl:Class rdf:about="&ac;Choreographer">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Circulation_Sheet -->
+
+    <owl:Class rdf:about="&ac;Circulation_Sheet">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa al full de préstec de les obres d&#39;art d&#39;un esdeveniment)  (fulls de prèstec, correspondència amb els prestadors, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2185,12 +1876,47 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Commemorations -->
+
+    <owl:Class rdf:about="&ac;Commemorations">
+        <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Composer -->
 
     <owl:Class rdf:about="&ac;Composer">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
         <rdfs:comment>Persona que compon obres musicals.
 </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Comunication -->
+
+    <owl:Class rdf:about="&ac;Comunication">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la comunicació d&#39;un esdeveniment (notes de premsa, gestió de la publicitat, elements de difusió, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Condition_Report -->
+
+    <owl:Class rdf:about="&ac;Condition_Report">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa all informes de condicions de les obres d&#39;art d&#39;un esdeveniment (informes de condició, fotografia de les onbres, correspondència amb restauradors, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Conservation_and_Restoration -->
+
+    <owl:Class rdf:about="&ac;Conservation_and_Restoration">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;estat de conservació i restauració de l&#39;expedient d&#39;una obra de la col·lecció de la Fundació  (informes de restauració in de conservació, fotografies, etc).</rdfs:comment>
     </owl:Class>
     
 
@@ -2209,6 +1935,15 @@ o
 
     <owl:Class rdf:about="&ac;Continent">
         <rdfs:subClassOf rdf:resource="&ac;Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Copyright_Protection -->
+
+    <owl:Class rdf:about="&ac;Copyright_Protection">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la protecció de drets d&#39;autor de l&#39;obra de l&#39;Antoni Tàpies (permisos de reproducció de l&#39;obra, sol·licituds, gesions amb VEGAP, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2276,6 +2011,15 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Description_and_Condition -->
+
+    <owl:Class rdf:about="&ac;Description_and_Condition">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als informes de condició de les obres de la col·lecció de la Fundació i a la catalogació de les obres de l&#39;Antoni Tàpies  (informes de condició, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Designer -->
 
     <owl:Class rdf:about="&ac;Designer">
@@ -2336,10 +2080,37 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Educational_Services -->
+
+    <owl:Class rdf:about="&ac;Educational_Services">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Servei educatiu (visites guiades, organització d&#39;activitats, tallers, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Event -->
 
     <owl:Class rdf:about="&ac;Event">
         <rdfs:comment>This entity represents an activity (exposition,  workshop, conference, etc.). It also represents the activity and  functioning of the institution  not linked to any specific activity  (advertising of the institution,  administrative documentation, protocol events and actions, external relations, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Event_Organisation -->
+
+    <owl:Class rdf:about="&ac;Event_Organisation">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;organització d&#39;un esdeveniment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Event_Production -->
+
+    <owl:Class rdf:about="&ac;Event_Production">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la producció d&#39;un esdeveniment.</rdfs:comment>
     </owl:Class>
     
 
@@ -2352,12 +2123,39 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#External_Relations -->
+
+    <owl:Class rdf:about="&ac;External_Relations">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les relacions externes de l&#39;entitat (Relacions amb Administracions, Fundacions i altres centres d&#39;Art, Universitats, empreses, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#FAT_Promotion_and_Information -->
+
+    <owl:Class rdf:about="&ac;FAT_Promotion_and_Information">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa promoció i difusió de l&#39;entitat.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Film-maker -->
 
     <owl:Class rdf:about="&ac;Film-maker">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
         <rdfs:comment>Persona que dirigeix una pel·licula de cinema, un documental, etc.
 </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Financial_Resource_Managment -->
+
+    <owl:Class rdf:about="&ac;Financial_Resource_Managment">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos financers de l&#39;entitat (pressupostos, gestió d&#39;ingressos i de despeses, anàlisis i conciliacions de comptes, impostos i obligacions fiscals, contractació administrativa, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2379,10 +2177,46 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Friends_of_the_FAT -->
+
+    <owl:Class rdf:about="&ac;Friends_of_the_FAT">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels Amics de la Fundació (sol·licitud, correspondència, activitats específiques, relacions amb els Amic d&#39;altres institucions, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Fundacio_Logo -->
+
+    <owl:Class rdf:about="&ac;Fundacio_Logo">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió del Logo de l&#39;entitat (imatges i aplicacions, imatge corporatiova).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Historian -->
 
     <owl:Class rdf:about="&ac;Historian">
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#History_of_FAT -->
+
+    <owl:Class rdf:about="&ac;History_of_FAT">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la Història de la Fundació.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Human_Resources -->
+
+    <owl:Class rdf:about="&ac;Human_Resources">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió dels recursos humans de l&#39;entitat (Accés, selecció i provisió, expedientb de personal, relacions laborarls, formació i moviments de personal).</rdfs:comment>
     </owl:Class>
     
 
@@ -2414,10 +2248,28 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Installation_Guide -->
+
+    <owl:Class rdf:about="&ac;Installation_Guide">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la itinerància d&#39;un esdeveniment (dossier d&#39;itinerància, correspondència, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#InstitutionalAgreement -->
 
     <owl:Class rdf:about="&ac;InstitutionalAgreement">
         <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Intervention_Report -->
+
+    <owl:Class rdf:about="&ac;Intervention_Report">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la intervenció d&#39;una obra d&#39;art de la col·lecció de la Fundació.</rdfs:comment>
     </owl:Class>
     
 
@@ -2472,10 +2324,29 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Lectures_and_Seminars -->
+
+    <owl:Class rdf:about="&ac;Lectures_and_Seminars">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#LecturesandSeminars -->
 
     <owl:Class rdf:about="&ac;LecturesandSeminars">
         <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Legislation_and_Legal_Matters -->
+
+    <owl:Class rdf:about="&ac;Legislation_and_Legal_Matters">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als assumptes jurídics de l&#39;entitat (legislació pròpia de les fundacions, lesgislació general, acords i convenis, litigis, etc.).
+
+Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les tramitacions jurídico-legals de la constitució de l&#39;entitat i les seves modificacions.</rdfs:comment>
     </owl:Class>
     
 
@@ -2496,6 +2367,15 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Library_Services -->
+
+    <owl:Class rdf:about="&ac;Library_Services">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de la Biblioteca (préstec intern, reprografia, consulta, difusió, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#License -->
 
     <owl:Class rdf:about="&ac;License">
@@ -2508,6 +2388,15 @@ o
 
     <owl:Class rdf:about="&ac;Location">
         <rdfs:comment>A spatial region or named place.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Managment_FAT -->
+
+    <owl:Class rdf:about="&ac;Managment_FAT">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió a la direcció de l&#39;entitat (òrgans rectors, sessions de junta del patronat, memòria d&#39;activitats, membres del patronat, documents estratègics, avaluacions de direcció, etc.).</rdfs:comment>
     </owl:Class>
     
 
@@ -2676,6 +2565,24 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Press_and_Media_Clipping -->
+
+    <owl:Class rdf:about="&ac;Press_and_Media_Clipping">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als reculls de premsa i comunicació referents a la Fundació.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Press_kit_and_Press_Releases -->
+
+    <owl:Class rdf:about="&ac;Press_kit_and_Press_Releases">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als dossiers i notes de premsa de la Fundació (no als esdeveniments que organitza).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Producer -->
 
     <owl:Class rdf:about="&ac;Producer">
@@ -2720,11 +2627,29 @@ o
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Protocol_Events_and_Actions -->
+
+    <owl:Class rdf:about="&ac;Protocol_Events_and_Actions">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa als actes i atencions protocolàries (commemoracions, discursos, presentacions, escrits corporatius, visites i viatges, felicitacions, agraïments i condols, etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Publication -->
 
     <owl:Class rdf:about="&ac;Publication">
         <rdfs:subClassOf rdf:resource="&ac;SpecialObject"/>
         <rdfs:comment>This entity represents a book, journal, a piece of music, etc. or other work for public sale.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Publications -->
+
+    <owl:Class rdf:about="&ac;Publications">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la gestió de les publicacions, tan de la Fundació com de l&#39;obra i figura d&#39;Antoni Tàpies, com del esdeveniments.</rdfs:comment>
     </owl:Class>
     
 
@@ -2735,6 +2660,33 @@ o
         <rdfs:subClassOf rdf:resource="&ac;Role"/>
         <rdfs:comment>
 </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Record_of_the_Work -->
+
+    <owl:Class rdf:about="&ac;Record_of_the_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a la fitxa d&#39;una obra de la Col·lecció.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Registration_of_the_Work -->
+
+    <owl:Class rdf:about="&ac;Registration_of_the_Work">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa al registre d&#39;una obra de la Col·lecció.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Research -->
+
+    <owl:Class rdf:about="&ac;Research">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a les investigacions que la Fundació porta a terme sobre l&#39;obra i la vida de l&#39;Antoni Tàpies, així com quan realitza un esdeveniment.</rdfs:comment>
     </owl:Class>
     
 
@@ -2792,6 +2744,31 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Space_A_Collection -->
+
+    <owl:Class rdf:about="&ac;Space_A_Collection">
+        <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Space_Rental -->
+
+    <owl:Class rdf:about="&ac;Space_Rental">
+        <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Space_and_Set-up -->
+
+    <owl:Class rdf:about="&ac;Space_and_Set-up">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa a l&#39;espai i muntatge d&#39;un esdeveniment (plànols, cartel·les, disseny d&#39;espis, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Speaker -->
 
     <owl:Class rdf:about="&ac;Speaker">
@@ -2829,6 +2806,21 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Status_and_Rules -->
+
+    <owl:Class rdf:about="&ac;Status_and_Rules">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+        <rdfs:comment>Aquesta relació permet reunir tota la documentació de l&#39;arxiu de la Fundació relativa all estatuts i reglamets de l&#39;entitat i les seves respectives modificacions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Sub_Case-file -->
+
+    <owl:Class rdf:about="&ac;Sub_Case-file"/>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#SuperActivity -->
 
     <owl:Class rdf:about="&ac;SuperActivity">
@@ -2850,6 +2842,14 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Thesaurus -->
 
     <owl:Class rdf:about="&ac;Thesaurus"/>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Touring_of_the_Exhibition -->
+
+    <owl:Class rdf:about="&ac;Touring_of_the_Exhibition">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+    </owl:Class>
     
 
 
@@ -2898,6 +2898,14 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Works -->
+
+    <owl:Class rdf:about="&ac;Works">
+        <rdfs:subClassOf rdf:resource="&ac;Sub_Case-file"/>
+    </owl:Class>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Workshop_tutor -->
 
     <owl:Class rdf:about="&ac;Workshop_tutor">
@@ -2909,6 +2917,14 @@ Agent [performsRole]-&gt; Role(Subclass)  &lt;- [] Event, Department,</rdfs:comm
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#WorkshopandMeetings -->
 
     <owl:Class rdf:about="&ac;WorkshopandMeetings">
+        <rdfs:subClassOf rdf:resource="&ac;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Workshops_inthe_Classroom -->
+
+    <owl:Class rdf:about="&ac;Workshops_inthe_Classroom">
         <rdfs:subClassOf rdf:resource="&ac;Collection"/>
     </owl:Class>
     
