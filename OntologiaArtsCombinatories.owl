@@ -180,6 +180,18 @@
     
 
 
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasCarriedOut -->
+
+    <owl:ObjectProperty rdf:about="&ac;hasCarriedOut">
+        <rdfs:domain rdf:resource="&ac;Agent"/>
+        <rdfs:range rdf:resource="&ac;Case-File"/>
+        <rdfs:range rdf:resource="&ac;Media"/>
+        <rdfs:range rdf:resource="&ac;SpecialObject"/>
+        <owl:inverseOf rdf:resource="&ac;carriedOutBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#hasLanguage -->
 
     <owl:ObjectProperty rdf:about="&ac;hasLanguage">
