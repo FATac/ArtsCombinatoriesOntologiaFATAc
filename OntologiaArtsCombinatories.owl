@@ -1367,6 +1367,7 @@ o
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#Title -->
 
     <owl:DatatypeProperty rdf:about="&ac;Title">
+        <rdfs:domain rdf:resource="&ac;Case-File"/>
         <rdfs:domain rdf:resource="&ac;Collection"/>
         <rdfs:domain rdf:resource="&ac;Event"/>
         <rdfs:domain rdf:resource="&ac;License"/>
