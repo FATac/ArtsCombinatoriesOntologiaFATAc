@@ -1019,6 +1019,15 @@ o
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
+    
+    
+    <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#DisplayScreen -->
+
+    <owl:DatatypeProperty rdf:about="&ac;DisplayScreen">
+        <rdfs:domain rdf:resource="&ac;SpecialObject"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
 
 
     <!-- http://localhost:8080/ArtsCombinatoriesRest/ontology/ac#EndDate -->
